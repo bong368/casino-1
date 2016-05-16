@@ -1,0 +1,442 @@
+@charset "UTF-8";
+/*
+Theme Name: Name
+Theme URI: http://khowebsites.com/
+Author: ITC Việt
+Author URI: http://itcviet.com/
+Description: Theme Name is a WordPress shopping theme designed for WooCommerce. The theme is ideal for supermarkets, shopping malls or convenience stores with loads of product categories.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: text_domain
+Tags: one-column, two-columns, three-columns, left-sidebar, right-sidebar, fixed-layout, custom-header, custom-background, custom-menu, editor-style, featured-images, microformats, post-formats
+
+The styleheets of Theme Name are located in assets/css.
+IMPORTANT : If you write your CSS code below, it will be deleted when you'll update the theme.
+*/
+/*	################################################################
+	CSS OVERVIEW
+
+	1. IMPORT FILES
+	2. GENERAL
+	3. ELEMENTS
+	4. HEADER
+	5. FOOTER
+	...
+
+################################################################# */
+/*==========================================================
+	1. IMPORT FILES
+==========================================================*/
+/* Fonts */
+@import url(fonts/fonts.css);
+/* Css */
+@import url(libs/font-awesome/css/font-awesome.min.css);
+@import url(libs/bootstrap/css/bootstrap.min.css);
+/*==========================================================
+	2. GENERAL
+==========================================================*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline; }
+
+body {
+  font-size: 14px;
+  color: #fff;
+  font-family: 'MyriadPro', sans-serif;
+  background: url(images/bgr-body.jpg) center center; }
+
+h1, h2, h3, h4, h5, h6 {
+  clear: both;
+  color: #373737;
+  font-family: 'MyriadPro', sans-serif; }
+
+h1 {
+  font-size: 24px; }
+
+h2 {
+  font-size: 20px; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 12px; }
+
+img {
+  border: none;
+  max-width: 100%;
+  height: auto; }
+
+a {
+  color: #373737;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s; }
+  a:hover {
+    color: #c9a96e;
+    text-decoration: none; }
+  a:focus {
+    text-decoration: none;
+    color: inherit;
+    outline: none; }
+
+button {
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s; }
+
+input {
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -ms-transition: all 0.3s ease-in-out 0s; }
+  input[type=text], input[type=email], input[type=password], input[type=number], input[type=search] {
+    border: 1px solid #d5d5d5;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #757575;
+    font-style: italic;
+    border-radius: 0; }
+
+textarea {
+  border: 1px solid #d5d5d5;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #757575;
+  font-style: italic;
+  border-radius: 0; }
+
+button {
+  border-color: #c9a96e;
+  outline: none; }
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus, input[type=search]:focus {
+  border-color: #c9a96e;
+  outline: none; }
+
+textarea:focus {
+  border-color: #c9a96e;
+  outline: none; }
+
+.table > tbody > tr > td, .table > tbody > tr > th {
+  border-color: #FCD998; }
+
+.table > tfoot > tr > td, .table > tfoot > tr > th {
+  border-color: #FCD998; }
+
+.table > thead > tr > td, .table > thead > tr > th {
+  border-color: #FCD998; }
+
+.align-center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
+
+.align-left {
+  text-align: center; }
+
+.fleft {
+  float: left; }
+
+.fright {
+  float: right; }
+
+.container {
+  width: 1000px;
+  margin: 0px auto; }
+
+/*==========================================================
+	3. ELEMENTS
+==========================================================*/
+/*==========================================================
+	4. HEADER
+==========================================================*/
+#header {
+  background: #2c2943; }
+  #header .container {
+    position: relative; }
+  #header .logo {
+    position: absolute;
+    left: 0px;
+    top: 10px; }
+  #header .header-top {
+    font-size: 0px;
+    border-bottom: 2px solid #fdbd20;
+    padding-left: 150px; }
+    #header .header-top .main-menu {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: top; }
+      #header .header-top .main-menu li a {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 15px 5px;
+        display: block; }
+      #header .header-top .main-menu li:hover a {
+        color: #999; }
+    #header .header-top .status-wrap {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: top;
+      padding: 4px 0px; }
+      #header .header-top .status-wrap .welcome-user {
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 17px;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        vertical-align: top;
+        text-align: center;
+        margin-left: 10px; }
+        #header .header-top .status-wrap .welcome-user span {
+          display: block; }
+        #header .header-top .status-wrap .welcome-user b {
+          font-size: 21px; }
+      #header .header-top .status-wrap .money-user, #header .header-top .status-wrap .diamond-user {
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        vertical-align: top;
+        margin: 0px 5px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fcb41d;
+        padding: 5px 28px;
+        position: relative;
+        background: url(images/icon-dolar.png) no-repeat 5px center #111522; }
+        #header .header-top .status-wrap .money-user button, #header .header-top .status-wrap .diamond-user button {
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          padding: 0px;
+          margin: 0px;
+          font-size: 0px;
+          cursor: pointer; }
+      #header .header-top .status-wrap .diamond-user {
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        vertical-align: top;
+        color: #ff00f0;
+        background: url(images/icon-diamond.png) no-repeat 5px center #111522; }
+      #header .header-top .status-wrap button {
+        border: none;
+        background: none; }
+    #header .header-top .menu {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: top; }
+      #header .header-top .menu button {
+        border: none;
+        background: none;
+        font-size: 0px;
+        padding: 13px 10px;
+        margin: 0px; }
+  #header .header-bottom {
+    padding: 4px 0px 4px 150px;
+    background: url(images/bgr-header-bottom.png) center top #000; }
+    #header .header-bottom .status-result {
+      border: 1px solid #fdbd20;
+      background: #000;
+      padding: 5px;
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: top;
+      margin-right: 15px; }
+      #header .header-bottom .status-result ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none; }
+        #header .header-bottom .status-result ul li span {
+          text-transform: uppercase;
+          display: -moz-inline-stack;
+          display: inline-block;
+          zoom: 1;
+          *display: inline;
+          vertical-align: middle;
+          width: 60px;
+          font-size: 15px; }
+        #header .header-bottom .status-result ul li b {
+          font-weight: 400;
+          color: #fcb41d;
+          font-size: 15px;
+          display: -moz-inline-stack;
+          display: inline-block;
+          zoom: 1;
+          *display: inline;
+          vertical-align: middle;
+          padding-right: 25px;
+          background: url(images/icon-dolar.png) no-repeat right center #111522; }
+    #header .header-bottom .ads-banner {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: top; }
+    #header .header-bottom .menu-control {
+      float: right;
+      margin-top: 5px; }
+      #header .header-bottom .menu-control ul li {
+        text-align: center; }
+        #header .header-bottom .menu-control ul li a {
+          display: block;
+          padding: 0px 20px; }
+        #header .header-bottom .menu-control ul li span {
+          display: block;
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 15px;
+          margin-top: 5px; }
+  #header .auto-scroll {
+    background: #fdbd20;
+    padding: 3px 0px;
+    color: #000;
+    font-size: 15px; }
+    #header .auto-scroll p {
+      opacity: 0.5; }
+
+/*==========================================================
+	5. CONTENT
+==========================================================*/
+#main .wrap-content {
+  margin: 5px;
+  background: #2c2943;
+  border-radius: 5px;
+  padding: 15px;
+  position: relative; }
+
+#main .btn-back {
+  position: absolute;
+  left: 20px;
+  top: 15px; }
+
+#main .btn-shop {
+  position: absolute;
+  right: 100px;
+  top: 20px;
+  color: #fff;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 27px;
+  padding: 0px 15px;
+  background: #8581a4;
+  border-radius: 5px; }
+
+#main .frm-transfer {
+  position: relative; }
+  #main .frm-transfer input[type="text"] {
+    font-weight: 700;
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    border: 1px solid #ffffff;
+    height: 41px;
+    line-height: 41px;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    background: #161421;
+    width: 250px; }
+    #main .frm-transfer input[type="text"].capcha {
+      width: 100px;
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: top; }
+  #main .frm-transfer .frm-left {
+    margin-left: 60px; }
+    #main .frm-transfer .frm-left .align-center {
+      margin-top: 25px; }
+      #main .frm-transfer .frm-left .align-center input[type="submit"] {
+        font-weight: 700;
+        font-size: 27px;
+        color: #fff;
+        padding: 3px 15px;
+        border-radius: 5px;
+        background: #fcb41d;
+        color: #fff;
+        border: none;
+        text-transform: uppercase; }
+  #main .frm-transfer .frm-right {
+    margin-left: 20px;
+    width: 490px; }
+    #main .frm-transfer .frm-right .note {
+      font-size: 15px;
+      font-weight: 700; }
+      #main .frm-transfer .frm-right .note h6 {
+        font-weight: 700;
+        color: #ff0048;
+        font-size: 15px; }
+      #main .frm-transfer .frm-right .note p {
+        font-size: 16px;
+        margin: 10px 0px 0px; }
+      #main .frm-transfer .frm-right .note ul {
+        margin: 0px;
+        padding: 0px 0px 0px 20px;
+        list-style: none; }
+
+/*==========================================================
+	6. FOOTER
+==========================================================*/
+#footer {
+  padding: 15px 0px;
+  background: #0c0d11;
+  margin-top: 4px; }
+  #footer .menu-footer {
+    padding-left: 45px; }
+    #footer .menu-footer ul li a {
+      color: #ffffff;
+      display: block;
+      padding: 5px 12px; }
+  #footer .information {
+    padding-right: 60px; }
+    #footer .information .copyright {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: middle;
+      font-size: 15px; }
+    #footer .information .social-container {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: middle;
+      margin-left: 20px; }

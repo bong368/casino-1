@@ -1,0 +1,28 @@
+#footer{
+  padding: 15px 0px;
+  background: #0c0d11;
+  margin-top: 4px;
+  .menu-footer{
+    padding-left: 45px;
+    ul{
+      li{
+        a{
+          color: #ffffff;
+          display: block;
+          padding: 5px 12px;
+        }
+      }
+    }
+  }
+  .information{
+    padding-right: 60px;
+    .copyright{
+      @include dis(middle);
+      font-size: 15px;
+    }
+    .social-container{
+      @include dis(middle);
+      margin-left: 20px;
+    }
+  }
+}

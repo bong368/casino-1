@@ -1,0 +1,14 @@
+{
+  "name": "Template Html",
+  "version": "1.0.0",
+  "authors": [
+    "phduy"
+  ],
+  "description": "Template for html",
+  "install": {
+    "path": "dist/libs"
+  },
+  "dependencies": {
+    "jquery": "1.10.2"
+  }
+}

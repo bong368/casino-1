@@ -1,0 +1,49 @@
+$image-path: '../images' !default;
+
+@mixin dis($pos){
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: $pos;
+}
+
+@mixin bg($img,$rep,$post) {
+  background-image: url(#{$image-path}/#{$img});
+  background-repeat: $rep;
+  background-position: $post;
+}
+
+@mixin bgs($img,$rep,$post,$size) {
+  background-image: url(#{$image-path}/#{$img});
+  background-repeat: $rep;
+  background-position: $post;
+  -webkit-background-size: $size;
+  background-size: $size;
+}
+
+@mixin trans($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin rsul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+@mixin bor($color) {
+  border: 1px solid $color;
+}
+
+@mixin opacity($val) {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{$val*100})";
+  filter: alpha(opacity=#{$val*100});
+  -moz-opacity: $val;
+  -khtml-opacity: $val;
+  opacity: $val;
+}

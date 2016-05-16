@@ -1,0 +1,51 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    #wrapper
+      include ./includes/header.jade
+      main#main.site-main
+        .container
+          .wrap-content
+            a.btn-back(href="#")
+              img(src="images/btn-back.png", alt="")
+            form.frm-transfer
+              .frm-left.fleft
+                p
+                  input(type="text", name="", placeholder="chọn loại thẻ")
+                p
+                  input(type="text", name="", placeholder="Chọn mệnh giá")
+                p
+                  input(type="text", name="", placeholder="Số lượng")
+                p
+                  input(type="text", name="", placeholder="Số lượng")
+                p
+                  input.capcha(type='text', name='', placeholder='Nhập mã')
+                  .capcha
+                    img(src='images/capcha.png', alt='')
+                .align-center
+                  input(type="submit", value="chuyển khoản")
+              //end frm-left
+              .frm-right.fleft
+                p
+                  input(type="text", name="", placeholder="chọn loại thẻ")
+                .note
+                  h6 * Phí giao dịch 2% trên giá trị chuyển khoản
+                  p Quy định chuyển khoản:
+                  ul
+                    li Giá trị giao dịch tối thiểu 10,000 xèng
+                    li Chi phí giao dịch : 2% giá trị giao dịch
+                    li Không giới hạn số lần giao dịch và giá trị giao dịch
+                  p Chú ý:
+                  ul
+                    li Nickname là tên nhân vật \(tên hiển thị trong game\)
+                    li Các giao dịch chuyển nhầm tên tài khoản chúng tôi xem là giao dịch thành công và không thực hiện hoàn trả.
+                    li Bạn vui lòng kiểm tra kỹ nickname trước khi thực hiện giao dịch
+              //end frm-right
+              .clearfix
+            //end frm-transfer
+            a.btn-shop(href="#") đại lý
+          //end wrap-content
+      // .site-main
+      include ./includes/footer.jade
+    // #wrapper
