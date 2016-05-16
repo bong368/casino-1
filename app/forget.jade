@@ -1,0 +1,26 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    #wrapper
+      include ./includes/header.jade
+      main#main.site-main
+        .container
+          .wrap-content
+            a.btn-back(href="#")
+              img(src="images/btn-back.png", alt="")
+            .main-content
+              h2.the-title-big QUÊN MẬT KHẨU
+              form.frm-forget(action="post")
+                p
+                  input(type="text", name="", placeholder="Tên đăng nhập")
+                p
+                  input(type="text", name="", placeholder="Email xác thực")
+                p
+                  input(type="submit", value="xác thực")
+                p.note Chỉ áp dụng với những thành viên đã xác thực email
+            //end main-content
+          //end wrap-content
+      // .site-main
+      include ./includes/footer.jade
+    // #wrapper

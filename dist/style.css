@@ -334,7 +334,8 @@ textarea:focus {
   background: #2c2943;
   border-radius: 5px;
   padding: 15px;
-  position: relative; }
+  position: relative;
+  min-height: 100px; }
 
 #main .btn-back {
   position: absolute;
@@ -393,6 +394,8 @@ textarea:focus {
         color: #fff;
         border: none;
         text-transform: uppercase; }
+        #main .frm-transfer .frm-left .align-center input[type="submit"]:hover {
+          opacity: 0.7; }
   #main .frm-transfer .frm-right {
     margin-left: 20px;
     width: 490px; }
@@ -410,6 +413,106 @@ textarea:focus {
         margin: 0px;
         padding: 0px 0px 0px 20px;
         list-style: none; }
+
+#main .main-content {
+  padding: 5px 25px 5px 40px; }
+  #main .main-content .the-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    font-size: 22px;
+    margin: 0px 0px 10px; }
+  #main .main-content .the-title-big {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: normal;
+    font-size: 35px;
+    margin: 0px 0px 10px; }
+  #main .main-content .tbl-dl {
+    outline: 4px solid #1b0107;
+    border: 2px solid #8581a4;
+    width: 100%;
+    background: #000000; }
+    #main .main-content .tbl-dl th {
+      text-align: center;
+      border: 2px solid #8581a4;
+      font-size: 23px;
+      font-weight: normal;
+      vertical-align: middle;
+      line-height: 20px; }
+    #main .main-content .tbl-dl th + th {
+      font-size: 17px; }
+    #main .main-content .tbl-dl th + th + th {
+      font-size: 23px; }
+    #main .main-content .tbl-dl td {
+      border: 2px solid #8581a4;
+      height: 20px; }
+
+#main .navigation {
+  padding: 15px 0px 0px;
+  text-align: center; }
+  #main .navigation ul {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle; }
+    #main .navigation ul li {
+      margin: 0px 5px; }
+      #main .navigation ul li a {
+        font-size: 23px;
+        font-weight: 700;
+        display: block;
+        color: #8581a4; }
+      #main .navigation ul li.active a {
+        color: #fff; }
+  #main .navigation a.btn {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: middle; }
+
+#main input[type="text"] {
+  font-weight: 700;
+  color: #fff;
+  font-size: 22px;
+  font-style: normal;
+  border: 1px solid #ffffff;
+  height: 41px;
+  line-height: 41px;
+  border-radius: 5px;
+  margin-bottom: 6px;
+  background: #161421;
+  width: 250px;
+  text-align: left; }
+
+#main .frm-forget p {
+  text-align: center;
+  margin-bottom: 30px; }
+  #main .frm-forget p.note {
+    font-weight: 700;
+    font-size: 13px;
+    color: #ff0048; }
+
+#main .frm-forget input[type="submit"] {
+  color: #fff;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 27px;
+  padding: 0px 25px;
+  background: #8581a4;
+  border-radius: 5px;
+  border: none; }
+  #main .frm-forget input[type="submit"]:hover {
+    opacity: 0.7; }
 
 /*==========================================================
 	6. FOOTER

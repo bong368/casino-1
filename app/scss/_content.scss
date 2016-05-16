@@ -5,6 +5,7 @@
     border-radius: 5px;
     padding: 15px;
     position: relative;
+    min-height: 100px;
   }
   .btn-back{
     position: absolute;
@@ -57,6 +58,9 @@
           color: #fff;
           border: none;
           text-transform: uppercase;
+          &:hover{
+            opacity: 0.7;
+          }
         }
       }
     }
@@ -80,6 +84,112 @@
           padding: 0px 0px 0px 20px;
           list-style: none;
         }
+      }
+    }
+  }
+  .main-content{
+    padding: 5px 25px 5px 40px;
+    .the-title{
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      font-weight: normal;
+      font-size: 22px;
+      margin: 0px 0px 10px;
+    }
+    .the-title-big{
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      font-weight: normal;
+      font-size: 35px;
+      margin: 0px 0px 10px;
+    }
+    .tbl-dl{
+      outline: 4px solid #1b0107;
+      border: 2px solid #8581a4;
+      width: 100%;
+      background: #000000;
+      th{
+        text-align: center;
+        border: 2px solid #8581a4;
+        font-size: 23px;
+        font-weight: normal;
+        vertical-align: middle;
+        line-height: 20px;
+      }
+      th + th{
+        font-size: 17px;
+      }
+      th + th + th{
+        font-size: 23px;
+      }
+      td{
+        border: 2px solid #8581a4;
+        height: 20px;
+      }
+    }
+  }
+  .navigation{
+    padding: 15px 0px 0px;
+    text-align: center;
+    ul{
+      @include dis(middle);
+      li{
+        margin: 0px 5px;
+        a{
+          font-size: 23px;
+          font-weight: 700;
+          display: block;
+          color: #8581a4;
+        }
+        &.active{
+          a{
+            color: #fff;
+          }
+        }
+      }
+    }
+    a.btn{
+      @include dis(middle);
+    }
+  }
+  input[type="text"]{
+    font-weight: 700;
+    color: #fff;
+    font-size: 22px;
+    font-style: normal;
+    border: 1px solid #ffffff;
+    height: 41px;
+    line-height: 41px;
+    border-radius: 5px;
+    margin-bottom: 6px;
+    background: #161421;
+    width: 250px;
+    text-align: left;
+  }
+  .frm-forget{
+    p{
+      text-align: center;
+      margin-bottom: 30px;
+      &.note{
+        font-weight: 700;
+        font-size: 13px;
+        color: #ff0048;
+      }
+    }
+    input[type="submit"]{
+      color: #fff;
+      @include dis(top);
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 27px;
+      padding: 0px 25px;
+      background: #8581a4;
+      border-radius: 5px;
+      border: none;
+      &:hover{
+        opacity: 0.7;
       }
     }
   }
