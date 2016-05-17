@@ -1,0 +1,41 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    #wrapper
+      include ./includes/header.jade
+      main#main.site-main
+        .container
+          .wrap-content
+            a.btn-back(href="#")
+              img(src="images/btn-back.png", alt="")
+            .main-content
+              h2.the-title-big ĐĂNG NHẬP
+              form#frm-login(action="post")
+                p
+                  input(type="text", name="username", placeholder="Tên đăng nhập")
+                  label.error(for='username') Tên đăng nhập không đúng
+                p
+                  input(type="password", name="password", placeholder="Mật khẩu")
+                  label.error(for='password') Mật khẩu không hợp lệ
+                p
+                  input(type="submit", value="đăng nhập")
+              //end frm-login
+              .link-control
+                .fleft.forget-pwd
+                  a(href="#") Quên mật khẩu?
+                .login-with
+                  span Hoặc đăng nhập bằng:
+                  a(href="#")
+                    img(src="images/icon-fb2.png", alt="")
+                  a(href="#")
+                    img(src="images/icon-gp2.png", alt="")
+                .fright.register
+                  a(href="#") Bạn chưa có tài khoản?
+                .clearfix
+              //end link-control
+            //end main-content
+          //end wrap-content
+      // .site-main
+      include ./includes/footer.jade
+    // #wrapper
