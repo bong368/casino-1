@@ -222,4 +222,74 @@
       color: inherit;
     }
   }
+  .frm-register{
+    .col{
+      width: 31%;
+      margin: 0px 1%;
+    }
+    p{
+      position: relative;
+      text-align: center;
+      label.error{
+        display: block;
+        font-weight: 700;
+        font-size: 13px;
+        color: #ff0048;
+        margin: -2px 0px 15px;
+      }
+    }
+    input[required] + label{
+      &:after{
+        content: '*';
+        color: #ff0048;
+        position: absolute;
+        bottom: 100%;
+        left: 10px;
+      }
+    }
+    .roles-container{
+      margin-bottom: 30px;
+      p{
+        font-size: 13px;
+        font-weight: 700;
+        color: #fcb41d;
+        margin: 10px 0px 0px;
+        &+p{
+          color: #eddcdd;
+          font-size: 15px;
+          input[type="checkbox"] {
+            display: none;
+            &+label:before {
+              content: "";
+              position: absolute;
+              right: 100%;
+              top: 0px;
+              background: url(images/cbx.png) no-repeat left top;
+              width: 34px;
+              height: 28px;
+            }
+            &:checked + label:before {
+              content: "";
+              width: 34px;
+              height: 28px;
+              background: url(images/cbx-checked.png) no-repeat left top;
+            }
+            &:checked + label:after {
+              font-weight: bold;
+            }
+          }
+          label {
+            cursor: pointer;
+            @include dis(middle);
+            position: relative;
+            line-height: 28px;
+          }
+        }
+      }
+    }
+    input[type="submit"]{
+      background: #278b3f;
+      padding: 0px 30px;
+    }
+  }
 }

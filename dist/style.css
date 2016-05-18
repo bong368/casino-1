@@ -545,6 +545,68 @@ textarea:focus {
   #main .link-control a {
     color: inherit; }
 
+#main .frm-register .col {
+  width: 31%;
+  margin: 0px 1%; }
+
+#main .frm-register p {
+  position: relative;
+  text-align: center; }
+  #main .frm-register p label.error {
+    display: block;
+    font-weight: 700;
+    font-size: 13px;
+    color: #ff0048;
+    margin: -2px 0px 15px; }
+
+#main .frm-register input[required] + label:after {
+  content: '*';
+  color: #ff0048;
+  position: absolute;
+  bottom: 100%;
+  left: 10px; }
+
+#main .frm-register .roles-container {
+  margin-bottom: 30px; }
+  #main .frm-register .roles-container p {
+    font-size: 13px;
+    font-weight: 700;
+    color: #fcb41d;
+    margin: 10px 0px 0px; }
+    #main .frm-register .roles-container p + p {
+      color: #eddcdd;
+      font-size: 15px; }
+      #main .frm-register .roles-container p + p input[type="checkbox"] {
+        display: none; }
+        #main .frm-register .roles-container p + p input[type="checkbox"] + label:before {
+          content: "";
+          position: absolute;
+          right: 100%;
+          top: 0px;
+          background: url(images/cbx.png) no-repeat left top;
+          width: 34px;
+          height: 28px; }
+        #main .frm-register .roles-container p + p input[type="checkbox"]:checked + label:before {
+          content: "";
+          width: 34px;
+          height: 28px;
+          background: url(images/cbx-checked.png) no-repeat left top; }
+        #main .frm-register .roles-container p + p input[type="checkbox"]:checked + label:after {
+          font-weight: bold; }
+      #main .frm-register .roles-container p + p label {
+        cursor: pointer;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        vertical-align: middle;
+        position: relative;
+        line-height: 28px; }
+
+#main .frm-register input[type="submit"] {
+  background: #278b3f;
+  padding: 0px 30px; }
+
 /*==========================================================
 	6. FOOTER
 ==========================================================*/
