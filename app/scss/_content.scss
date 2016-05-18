@@ -6,6 +6,14 @@
     padding: 15px;
     position: relative;
     min-height: 100px;
+    &.no-background{
+      background: none;
+      padding: 5px 0px 15px;
+      .main-content{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
   }
   .btn-back{
     position: absolute;
@@ -290,6 +298,99 @@
     input[type="submit"]{
       background: #278b3f;
       padding: 0px 30px;
+    }
+  }
+  .tabs{
+    margin-left: 0px;
+    padding-left: 60px;
+    li{
+      padding: 0px;
+      a{
+        display: block;
+        font-size: 35px;
+        padding: 0px 20px;
+        line-height: 50px;
+        color: #8581a4;
+        &.active{
+          background: #2c2943;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .tab-content{
+    background: #2c2943;
+    padding: 35px 50px;
+    .list-cart{
+      padding-bottom: 10px;
+      li{
+        position: relative;
+        padding: 0px;
+        margin-left: 75px;
+        border-radius: 5px;
+        span{
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          display: block;
+          height: 39px;
+          line-height: 39px;
+          text-align: center;
+          font-size: 23px;
+          color: #fff;
+        }
+        &:first-child{
+          margin-left: 0px;
+        }
+      }
+    }
+  }
+  .frm-cart{
+    p{
+      margin-bottom: 10px;
+    }
+    select {
+      padding: 0px 15px;
+      margin: 0;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      background: #000;
+      color: #888;
+      border: none;
+      outline: none;
+      display: inline-block;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      cursor: pointer;
+      border: 1px solid #fff;
+    }
+
+    /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+    @media screen and (-webkit-min-device-pixel-ratio: 0) {
+      select {
+        padding-right: 18px;
+        height: 41px;
+        line-height: 41px;
+        width: 250px;
+        font-weight: 700;
+        font-size: 22px;
+      }
+    }
+
+    label {
+      position: relative;
+      &:after {
+        content: '';
+        right: 6px;
+        top: 0px;
+        width: 24px;
+        height: 41px;
+        position: absolute;
+        background: url(images/arrow-down.png) no-repeat center center;
+      }
     }
   }
 }

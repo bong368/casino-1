@@ -6,38 +6,40 @@ html
       include ./includes/header.jade
       main#main.site-main
         .container
-          .wrap-content
+          .wrap-content.no-background
             a.btn-back(href="#")
               img(src="images/btn-back.png", alt="")
             .main-content
-              h2.the-title-big ĐĂNG KÝ
-              form.frm-register(action="post")
-                .fleft.col.col-one
-                  p
-                    input(type="text", name="username", placeholder="Tên đăng nhập", required)
-                    label.error(for='username') Tên đăng nhập đã tồn tại
-                  p
-                    input(type="text", name="", placeholder="Tên hiển thị", required)
-                    label.error(for='') Tên hiển thị đã tồn tại
-                .fleft.col.col-one
-                  p
-                    input(type="password", name="username", placeholder="Mật khẩu", required)
-                    label.error(for='username') Mật khẩu không hợp lệ
-                  p
-                    input(type="password", name="password", placeholder="Nhập lại mật khẩu", required)
-                    label.error(for='password') Mật khẩu không hợp lệ
-                .fleft.col.col-one
-                  p
-                    input(type="text", name="username", placeholder="Email cá nhân")
-                    label.error(for='username') email đã tồn tại
-                .clearfix
-                .roles-container
-                  p * Vui lòng nhập tên hiển thị để bảo mật tài khoản và nhận quà từ hệ thống
-                  p
-                    input(type='checkbox', name='cbx', id="cbx")
-                    label(for='cbx') Tôi đã đọc kỹ và hoàn toàn đồng ý với Điều khoản sử dụng
-                p
-                  input(type="submit", value="ĐĂNG KÝ")
+              ul.list-inline.tabs
+                li
+                  a.active(href='#tab1') NẠP XÈNG
+                li
+                  a(href='#tab2') BÁN XÈNG
+                li
+                  a(href='#tab3') CỬA HÀNG
+              #tab1.tab-content
+                ul.list-inline.list-cart
+                  li.sale
+                    a(href="#")
+                      img(src="images/cart-vt.png", alt="")
+                      span Thẻ Viettel
+                  li
+                    a(href="#")
+                      img(src="images/cart-mb.png", alt="")
+                      span Thẻ Mobifone
+                  li
+                    a(href="#")
+                      img(src="images/cart-vn.png", alt="")
+                      span Thẻ Vinaphone
+                  li
+                    a(href="#")
+                      img(src="images/cart-empty.png", alt="")
+                      span 
+              #tab2.tab-content
+                p This is the 2nd tab.
+              #tab3.tab-content
+                p And this is the 3rd tab.
+
             //end main-content
           //end wrap-content
       // .site-main

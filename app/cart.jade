@@ -1,0 +1,101 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    #wrapper
+      include ./includes/header.jade
+      main#main.site-main
+        .container
+          .wrap-content.no-background
+            a.btn-back(href="#")
+              img(src="images/btn-back.png", alt="")
+            .main-content
+              ul.list-inline.tabs
+                li
+                  a.active(href='#tab1') THẺ ĐIỆN THOẠI
+                li
+                  a(href='#tab2') THẺ GAME
+                li
+                  a(href='#tab3') VẬT PHẨM
+              #tab1.tab-content
+                form.frm-cart
+                  .frm-left.fleft
+                    p
+                      label(for="")
+                        select(name="")
+                          option(value="", selected, disable) Chọn loại thẻ
+                          option(value="") Option01
+                          option(value="") Option02
+                          option(value="") Option03
+                          option(value="") Option04
+                          option(value="") Option05
+                    p
+                      label(for="")
+                        select(name="")
+                          option(value="", selected, disable) Chọn loại thẻ
+                          option(value="") Option01
+                          option(value="") Option02
+                          option(value="") Option03
+                          option(value="") Option04
+                          option(value="") Option05
+                    p
+                      label(for="")
+                        select(name="")
+                          option(value="", selected, disable) Chọn loại thẻ
+                          option(value="") Option01
+                          option(value="") Option02
+                          option(value="") Option03
+                          option(value="") Option04
+                          option(value="") Option05
+                    p
+                      input.capcha(type='text', name='', placeholder='Nhập mã')
+                      .capcha
+                        img(src='images/capcha.png', alt='')
+                    .align-center
+                      input(type="submit", value="999,999,999,999")
+                      label(for="").error * Số dư không đủ để thực hiện giao dịch
+                  //end frm-left
+                  .frm-right.fleft
+                    table.tbl-cart
+                      tr
+                        th Mệnh giá
+                        th Giá bán
+                      tr
+                        td
+                        td
+                      tr
+                        td
+                        td
+                      tr
+                        td
+                        td
+                      tr
+                        td
+                        td
+                      tr
+                        td
+                        td
+                      tr
+                        td
+                        td
+                      tr
+                        td
+                        td
+                      tr
+                        td
+                        td
+                      tr
+                        td
+                        td
+                  //end frm-right
+                  .clearfix
+              #tab2.tab-content
+                p This is the 2nd tab.
+              #tab3.tab-content
+                p And this is the 3rd tab.
+
+            //end main-content
+          //end wrap-content
+      // .site-main
+      include ./includes/footer.jade
+    // #wrapper

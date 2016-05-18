@@ -336,6 +336,12 @@ textarea:focus {
   padding: 15px;
   position: relative;
   min-height: 100px; }
+  #main .wrap-content.no-background {
+    background: none;
+    padding: 5px 0px 15px; }
+    #main .wrap-content.no-background .main-content {
+      padding-left: 0px;
+      padding-right: 0px; }
 
 #main .btn-back {
   position: absolute;
@@ -606,6 +612,84 @@ textarea:focus {
 #main .frm-register input[type="submit"] {
   background: #278b3f;
   padding: 0px 30px; }
+
+#main .tabs {
+  margin-left: 0px;
+  padding-left: 60px; }
+  #main .tabs li {
+    padding: 0px; }
+    #main .tabs li a {
+      display: block;
+      font-size: 35px;
+      padding: 0px 20px;
+      line-height: 50px;
+      color: #8581a4; }
+      #main .tabs li a.active {
+        background: #2c2943;
+        color: #fff; }
+
+#main .tab-content {
+  background: #2c2943;
+  padding: 35px 50px; }
+  #main .tab-content .list-cart {
+    padding-bottom: 10px; }
+    #main .tab-content .list-cart li {
+      position: relative;
+      padding: 0px;
+      margin-left: 75px;
+      border-radius: 5px; }
+      #main .tab-content .list-cart li span {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        display: block;
+        height: 39px;
+        line-height: 39px;
+        text-align: center;
+        font-size: 23px;
+        color: #fff; }
+      #main .tab-content .list-cart li:first-child {
+        margin-left: 0px; }
+
+#main .frm-cart {
+  /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */ }
+  #main .frm-cart p {
+    margin-bottom: 10px; }
+  #main .frm-cart select {
+    padding: 0px 15px;
+    margin: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #000;
+    color: #888;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #fff; }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    #main .frm-cart select {
+      padding-right: 18px;
+      height: 41px;
+      line-height: 41px;
+      width: 250px;
+      font-weight: 700;
+      font-size: 22px; } }
+  #main .frm-cart label {
+    position: relative; }
+    #main .frm-cart label:after {
+      content: '';
+      right: 6px;
+      top: 0px;
+      width: 24px;
+      height: 41px;
+      position: absolute;
+      background: url(images/arrow-down.png) no-repeat center center; }
 
 /*==========================================================
 	6. FOOTER
