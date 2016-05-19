@@ -1,0 +1,125 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    #wrapper
+      include ./includes/header.jade
+      main#main.site-main
+        .container
+          .wrap-content.no-background
+            a.btn-back(href="#")
+              img(src="images/btn-back.png", alt="")
+            .main-content
+              ul.list-inline.tabs.tabs-small
+                li
+                  a.active(href='#tab1') QUẢN LÝ TÀI KHOẢN
+                li
+                  a(href='#tab2') ĐỔI MẬT KHẨU
+                li
+                  a(href='#tab3') CẬP NHẬT THÔNG TIN
+                li
+                  a(href='#tab4') LỊCH SỬ GIAO DỊCH
+                li
+                  a(href='#tab5') THƯ
+              #tab1.tab-padding.tab-content
+                p Tab1
+              #tab2.tab-padding.tab-content
+                p This is the 2nd tab.
+              #tab3.tab-padding.tab-content
+                p And this is the 3rd tab.
+              #tab4.tab-padding.tab-content
+                p And this is the 4rd tab.
+              #tab5.tab-padding.tab-content
+                ul.fleft.tabs.tabs-vertical
+                  li
+                    a(href='#tab2-1')
+                      img(src="images/icon-mail.png", alt="")
+                  li
+                    a(href='#tab2-2')
+                      img(src="images/icon-gift.png", alt="")
+                #tab2-1.tab-content
+                  ul.list-messeger
+                    li
+                      .fleft.content-messeger
+                        p [ SHOP] Mã thẻ Viettel 500,000 VNĐ
+                        p Người gửi : Hệ thống - Thời gian : dd/mm/yyyyy
+                      .fright.control-messeger
+                        a.btn-delivery(href="#") XÓA
+                      .clearfix
+                    li
+                      .fleft.content-messeger
+                        p [ SHOP] Mã thẻ Viettel 500,000 VNĐ
+                        p Người gửi : Hệ thống - Thời gian : dd/mm/yyyyy
+                      .fright.control-messeger
+                        a.btn-delivered(href="#") ĐÃ NHẬN
+                        span.text-delivery tự xóa sau<br/>
+                          b 30
+                          | ngày
+                      .clearfix
+                    li
+                      .fleft.content-messeger
+                        p [ SHOP] Mã thẻ Viettel 500,000 VNĐ
+                        p Người gửi : Hệ thống - Thời gian : dd/mm/yyyyy
+                      .fright.control-messeger
+                        a.btn-delivery(href="#") XÓA
+                      .clearfix
+                    li
+                      .fleft.content-messeger
+                        p [ SHOP] Mã thẻ Viettel 500,000 VNĐ
+                        p Người gửi : Hệ thống - Thời gian : dd/mm/yyyyy
+                      .fright.control-messeger
+                        a.btn-delivery(href="#") XÓA
+                      .clearfix
+                  .control-delivery
+                    
+                #tab2-2.tab-content
+                  ul.list-messeger
+                    li
+                      .fleft.content-messeger
+                        p [ SHOP] Mã thẻ Viettel 500,000 VNĐ
+                        p Người gửi : Hệ thống - Thời gian : dd/mm/yyyyy
+                      .fright.control-messeger
+                        a.btn-delivery(href="#") NHẬN
+                        span.text-delivery tự xóa sau<br/>
+                          b 30
+                          | ngày
+                      .clearfix
+                    li
+                      .fleft.content-messeger
+                        p [ SHOP] Mã thẻ Viettel 500,000 VNĐ
+                        p Người gửi : Hệ thống - Thời gian : dd/mm/yyyyy
+                      .fright.control-messeger
+                        a.btn-delivery(href="#") NHẬN
+                        span.text-delivery tự xóa sau<br/>
+                          b 30
+                          | ngày
+                      .clearfix
+                    li
+                      .fleft.content-messeger
+                        p [ SHOP] Mã thẻ Viettel 500,000 VNĐ
+                        p Người gửi : Hệ thống - Thời gian : dd/mm/yyyyy
+                      .fright.control-messeger
+                        a.btn-delivery(href="#") NHẬN
+                        span.text-delivery tự xóa sau<br/>
+                          b 30
+                          | ngày
+                      .clearfix
+                    li
+                      .fleft.content-messeger
+                        p [ SHOP] Mã thẻ Viettel 500,000 VNĐ
+                        p Người gửi : Hệ thống - Thời gian : dd/mm/yyyyy
+                      .fright.control-messeger
+                        a.btn-delivery(href="#") NHẬN
+                        span.text-delivery tự xóa sau<br/>
+                          b 30
+                          | ngày
+                      .clearfix
+                  .control-delivery
+                    a.btn-deliveryall NHẬN TẤT CẢ
+                .clearfix
+
+            //end main-content
+          //end wrap-content
+      // .site-main
+      include ./includes/footer.jade
+    // #wrapper

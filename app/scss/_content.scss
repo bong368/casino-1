@@ -33,6 +33,9 @@
     background: #8581a4;
     border-radius: 5px;
   }
+  .capcha{
+    @include dis(top);
+  }
   .frm-transfer{
     position: relative;
     input[type="text"]{
@@ -113,7 +116,7 @@
       font-size: 35px;
       margin: 0px 0px 10px;
     }
-    .tbl-dl{
+    .tbl-dl, .tbl-cart{
       outline: 4px solid #1b0107;
       border: 2px solid #8581a4;
       width: 100%;
@@ -317,6 +320,34 @@
         }
       }
     }
+    &.tabs-small{
+      li{
+        a{
+          font-size: 21px;
+          padding: 0px 15px;
+        }
+      }
+    }
+    &.tabs-vertical{
+      margin: 10px 0px 0px;
+      padding: 0px;
+      list-style: none;
+      li{
+        display: block;
+        margin-bottom: 2px;
+        a{
+          background: #3d3b71;
+          padding: 0px 10px;
+          line-height: 97px;
+          border-radius: 5px 0px 0px 5px;
+          opacity: 0.7;
+          &.active{
+            background: #524e95;
+            opacity: 1;
+          }
+        }
+      }
+    }
   }
   .tab-content{
     background: #2c2943;
@@ -345,8 +376,115 @@
         }
       }
     }
+    .tab-content{
+      background: #524e95;
+      padding: 5px 13px;
+      float: right;
+      width: 883px;
+      border-radius: 5px;
+      .list-messeger{
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 270px;
+        padding-right: 10px;
+        li{
+          display: block;
+          border: 1px solid #8581a4;
+          border-radius: 5px;
+          box-shadow: inset 0px 0px 25px #000;
+          background: #29274a;
+          padding: 10px 25px;
+          margin-bottom: 3px;
+          .content-messeger{
+            font-size: 21px;
+            color: #7c7c7c;
+          }
+          a.btn-delivery{
+            font-weight: 700;
+            color: #fff;
+            font-size: 34px;
+            background: #8581a4;
+            @include dis(middle);
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 0px 15px;
+            &:hover{
+              opacity: 0.7;
+            }
+          }
+          .text-delivery{
+            @include dis(middle);
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 28px;
+            margin-left: 20px;
+            b{
+              @include dis(middle);
+              width: 38px;
+              height: 38px;
+              border-radius: 50%;
+              box-shadow: inset 0px 0px 5px #000;
+              background: #1f1d35;
+              border: 1px solid #827fa2;
+              text-align: center;
+              line-height: 38px;
+              margin-right: 5px;
+            }
+          }
+          .btn-delivered{
+            @include dis(middle);
+            font-size: 34px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 28px;
+            margin-left: 20px;
+            background: url(images/icon-minus.png) no-repeat center right;
+            padding-right: 30px;
+          }
+        }
+      }
+      .control-delivery{
+        text-align: center;
+        padding: 10px 0px 5px;
+        min-height: 48px;
+        a.btn-deliveryall{
+          @include dis(top);
+          font-size: 34px;
+          color: #fff;
+          background: #fcb41d;
+          padding: 0px 15px;
+          font-weight: 700;
+          border-radius: 5px;
+          cursor: pointer;
+          &:hover{
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+    &.tab-padding{
+      padding: 10px;
+    }
   }
   .frm-cart{
+    .frm-left{
+      width: 270px;
+      input[type="text"]{
+        width: 110px;
+      }
+    }
+    .frm-right{
+      width: 320px;
+      .tbl-cart{
+        th{
+          padding: 10px 0px;
+          font-weight: 700;
+          font-size: 15px;
+          width: 160px;
+        }
+      }
+    }
     p{
       margin-bottom: 10px;
     }
@@ -380,7 +518,7 @@
       }
     }
 
-    label {
+    label{
       position: relative;
       &:after {
         content: '';
@@ -390,6 +528,30 @@
         height: 41px;
         position: absolute;
         background: url(images/arrow-down.png) no-repeat center center;
+      }
+      span.note{
+        position: absolute;
+        left: 100%;
+        top: 0px;
+        width: 100%;
+        line-height: 49px;
+        margin-left: 5px;
+      }
+    }
+    input[type="submit"]{
+      background: #fcb41d;
+      color: #fff;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .align-center label{
+      font-size: 14px;
+      font-weight: 700;
+      color: #f50248;
+      display: block;
+      margin-top: 5px;
+      &:after {
+        display: none;
       }
     }
   }
