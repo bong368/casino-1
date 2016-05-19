@@ -657,6 +657,8 @@ textarea:focus {
 #main .tab-content {
   background: #2c2943;
   padding: 35px 50px; }
+  #main .tab-content.padding-normal {
+    padding: 5px 25px 10px; }
   #main .tab-content .list-cart {
     padding-bottom: 10px; }
     #main .tab-content .list-cart li {
@@ -774,6 +776,12 @@ textarea:focus {
           opacity: 0.7; }
   #main .tab-content.tab-padding {
     padding: 10px; }
+  #main .tab-content ul.tabs {
+    padding-left: 0px; }
+    #main .tab-content ul.tabs li a {
+      font-size: 23px; }
+      #main .tab-content ul.tabs li a.active {
+        background: #1b0107; }
 
 #main .frm-cart {
   /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */ }
@@ -844,6 +852,10 @@ textarea:focus {
     margin-top: 5px; }
     #main .frm-cart .align-center label:after {
       display: none; }
+
+#main .history-content .tbl-dl th {
+  padding-top: 10px;
+  padding-bottom: 10px; }
 
 /*==========================================================
 	6. FOOTER

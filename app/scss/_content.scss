@@ -352,6 +352,9 @@
   .tab-content{
     background: #2c2943;
     padding: 35px 50px;
+    &.padding-normal{
+      padding: 5px 25px 10px;
+    }
     .list-cart{
       padding-bottom: 10px;
       li{
@@ -466,6 +469,17 @@
     &.tab-padding{
       padding: 10px;
     }
+    ul.tabs{
+      padding-left: 0px;
+      li{
+        a{
+          font-size: 23px;
+          &.active{
+            background: #1b0107;
+          }
+        }
+      }
+    }
   }
   .frm-cart{
     .frm-left{
@@ -552,6 +566,14 @@
       margin-top: 5px;
       &:after {
         display: none;
+      }
+    }
+  }
+  .history-content{
+    .tbl-dl{
+      th{
+        padding-top: 10px;
+        padding-bottom: 10px;
       }
     }
   }
