@@ -329,52 +329,233 @@ textarea:focus {
 /*==========================================================
 	5. CONTENT
 ==========================================================*/
-#main .wrap-content {
-  margin: 5px;
-  background: #2c2943;
-  border-radius: 5px;
-  padding: 15px;
-  position: relative;
-  min-height: 100px; }
-  #main .wrap-content.no-background {
-    background: none;
-    padding: 5px 0px 15px; }
-    #main .wrap-content.no-background .main-content {
-      padding-left: 0px;
-      padding-right: 0px; }
-
-#main .btn-back {
-  position: absolute;
-  left: 20px;
-  top: 15px; }
-
-#main .btn-shop {
-  position: absolute;
-  right: 100px;
-  top: 20px;
-  color: #fff;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  vertical-align: top;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 27px;
-  padding: 0px 15px;
-  background: #8581a4;
-  border-radius: 5px; }
-
-#main .capcha {
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  vertical-align: top; }
-
-#main .frm-transfer {
-  position: relative; }
-  #main .frm-transfer input[type="text"] {
+#main {
+  /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */ }
+  #main .wrap-content {
+    margin: 5px;
+    background: #2c2943;
+    border-radius: 5px;
+    padding: 15px;
+    position: relative;
+    min-height: 100px; }
+    #main .wrap-content.no-background {
+      background: none;
+      padding: 5px 0px 15px; }
+      #main .wrap-content.no-background .main-content {
+        padding-left: 0px;
+        padding-right: 0px; }
+  #main .btn-back {
+    position: absolute;
+    left: 20px;
+    top: 15px; }
+  #main .btn-shop {
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    color: #fff;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 27px;
+    padding: 0px 15px;
+    background: #8581a4;
+    border-radius: 5px; }
+  #main .capcha {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: top; }
+  #main .frm-transfer {
+    position: relative; }
+    #main .frm-transfer input[type="text"] {
+      font-weight: 700;
+      color: #fff;
+      font-size: 22px;
+      font-style: normal;
+      border: 1px solid #ffffff;
+      height: 41px;
+      line-height: 41px;
+      border-radius: 5px;
+      margin-bottom: 6px;
+      background: #161421;
+      width: 250px; }
+      #main .frm-transfer input[type="text"].capcha {
+        width: 100px;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        vertical-align: top; }
+    #main .frm-transfer .frm-left {
+      margin-left: 60px; }
+      #main .frm-transfer .frm-left .align-center {
+        margin-top: 25px; }
+        #main .frm-transfer .frm-left .align-center input[type="submit"] {
+          font-weight: 700;
+          font-size: 27px;
+          color: #fff;
+          padding: 3px 15px;
+          border-radius: 5px;
+          background: #fcb41d;
+          color: #fff;
+          border: none;
+          text-transform: uppercase; }
+          #main .frm-transfer .frm-left .align-center input[type="submit"]:hover {
+            opacity: 0.7; }
+    #main .frm-transfer .frm-right {
+      margin-left: 20px;
+      width: 490px; }
+      #main .frm-transfer .frm-right .note {
+        font-size: 15px;
+        font-weight: 700; }
+        #main .frm-transfer .frm-right .note h6 {
+          font-weight: 700;
+          color: #ff0048;
+          font-size: 15px; }
+        #main .frm-transfer .frm-right .note p {
+          font-size: 16px;
+          margin: 10px 0px 0px; }
+        #main .frm-transfer .frm-right .note ul {
+          margin: 0px;
+          padding: 0px 0px 0px 20px;
+          list-style: none; }
+    #main .frm-transfer.frm-edit .frm-left {
+      margin-left: 0px; }
+      #main .frm-transfer.frm-edit .frm-left p {
+        margin-top: 15px; }
+      #main .frm-transfer.frm-edit .frm-left label.slt span {
+        font-size: 22px;
+        font-weight: 700;
+        color: #7c7c7c;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        vertical-align: middle;
+        margin-right: 10px; }
+      #main .frm-transfer.frm-edit .frm-left label.slt select {
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        vertical-align: middle;
+        width: 150px; }
+      #main .frm-transfer.frm-edit .frm-left .date input[type="text"] {
+        width: 70px;
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        vertical-align: middle;
+        font-size: 19px; }
+      #main .frm-transfer.frm-edit .frm-left .date span {
+        display: -moz-inline-stack;
+        display: inline-block;
+        zoom: 1;
+        *display: inline;
+        vertical-align: middle;
+        font-size: 20px;
+        color: #7c7c7c;
+        padding: 0px 4px; }
+    #main .frm-transfer.frm-edit .frm-right p {
+      font-size: 19px;
+      color: #8581a4;
+      font-weight: 700;
+      margin-bottom: 10px; }
+    #main .frm-transfer.frm-edit .frm-right .align-center {
+      margin-top: 20px; }
+  #main .frm-change-password, #main .manager-account {
+    width: 250px;
+    margin: 10px auto; }
+    #main .frm-change-password p, #main .manager-account p {
+      margin-bottom: 15px; }
+      #main .frm-change-password p label.error, #main .manager-account p label.error {
+        font-weight: 700;
+        font-size: 13px;
+        color: #ff0048;
+        display: block; }
+    #main .frm-change-password input[type="submit"], #main .manager-account input[type="submit"] {
+      color: #fff;
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: middle;
+      vertical-align: top;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 27px;
+      padding: 0px 25px;
+      background: #8581a4;
+      border-radius: 5px;
+      border: none; }
+      #main .frm-change-password input[type="submit"]:hover, #main .manager-account input[type="submit"]:hover {
+        opacity: 0.7; }
+  #main .main-content {
+    padding: 5px 25px 5px 40px; }
+    #main .main-content .the-title {
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      font-weight: normal;
+      font-size: 22px;
+      margin: 0px 0px 10px; }
+    #main .main-content .the-title-big {
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      font-weight: normal;
+      font-size: 35px;
+      margin: 0px 0px 10px; }
+    #main .main-content .tbl-dl, #main .main-content .tbl-cart {
+      outline: 4px solid #1b0107;
+      border: 2px solid #8581a4;
+      width: 100%;
+      background: #000000; }
+      #main .main-content .tbl-dl th, #main .main-content .tbl-cart th {
+        text-align: center;
+        border: 2px solid #8581a4;
+        font-size: 23px;
+        font-weight: normal;
+        vertical-align: middle;
+        line-height: 20px; }
+      #main .main-content .tbl-dl th + th, #main .main-content .tbl-cart th + th {
+        font-size: 17px; }
+      #main .main-content .tbl-dl th + th + th, #main .main-content .tbl-cart th + th + th {
+        font-size: 23px; }
+      #main .main-content .tbl-dl td, #main .main-content .tbl-cart td {
+        border: 2px solid #8581a4;
+        height: 20px; }
+  #main .navigation {
+    padding: 15px 0px 0px;
+    text-align: center; }
+    #main .navigation ul {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: middle; }
+      #main .navigation ul li {
+        margin: 0px 5px; }
+        #main .navigation ul li a {
+          font-size: 23px;
+          font-weight: 700;
+          display: block;
+          color: #8581a4; }
+        #main .navigation ul li.active a {
+          color: #fff; }
+    #main .navigation a.btn {
+      display: -moz-inline-stack;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: middle; }
+  #main input[type="text"], #main input[type="password"] {
     font-weight: 700;
     color: #fff;
     font-size: 22px;
@@ -385,406 +566,278 @@ textarea:focus {
     border-radius: 5px;
     margin-bottom: 6px;
     background: #161421;
-    width: 250px; }
-    #main .frm-transfer input[type="text"].capcha {
-      width: 100px;
+    width: 250px;
+    text-align: left; }
+  #main input[type="submit"] {
+    color: #fff;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    vertical-align: top;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 27px;
+    padding: 0px 25px;
+    background: #8581a4;
+    border-radius: 5px;
+    border: none; }
+    #main input[type="submit"]:hover {
+      opacity: 0.7; }
+  #main .frm-forget p {
+    text-align: center;
+    margin-bottom: 30px; }
+    #main .frm-forget p.note {
+      font-weight: 700;
+      font-size: 13px;
+      color: #ff0048; }
+  #main #frm-login p {
+    text-align: center; }
+    #main #frm-login p label.error {
+      display: block;
+      font-weight: 700;
+      font-size: 13px;
+      color: #ff0048;
+      margin: -2px 0px 15px; }
+  #main .link-control {
+    text-align: center;
+    font-weight: 700;
+    color: #8581a4;
+    font-size: 19px;
+    margin: 30px 0px 1px; }
+    #main .link-control .login-with {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
       *display: inline;
       vertical-align: top; }
-  #main .frm-transfer .frm-left {
-    margin-left: 60px; }
-    #main .frm-transfer .frm-left .align-center {
-      margin-top: 25px; }
-      #main .frm-transfer .frm-left .align-center input[type="submit"] {
-        font-weight: 700;
-        font-size: 27px;
-        color: #fff;
-        padding: 3px 15px;
-        border-radius: 5px;
-        background: #fcb41d;
-        color: #fff;
-        border: none;
-        text-transform: uppercase; }
-        #main .frm-transfer .frm-left .align-center input[type="submit"]:hover {
-          opacity: 0.7; }
-  #main .frm-transfer .frm-right {
-    margin-left: 20px;
-    width: 490px; }
-    #main .frm-transfer .frm-right .note {
-      font-size: 15px;
-      font-weight: 700; }
-      #main .frm-transfer .frm-right .note h6 {
-        font-weight: 700;
-        color: #ff0048;
-        font-size: 15px; }
-      #main .frm-transfer .frm-right .note p {
-        font-size: 16px;
-        margin: 10px 0px 0px; }
-      #main .frm-transfer .frm-right .note ul {
-        margin: 0px;
-        padding: 0px 0px 0px 20px;
-        list-style: none; }
-
-#main .main-content {
-  padding: 5px 25px 5px 40px; }
-  #main .main-content .the-title {
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-    font-weight: normal;
-    font-size: 22px;
-    margin: 0px 0px 10px; }
-  #main .main-content .the-title-big {
-    text-transform: uppercase;
-    text-align: center;
-    color: #fff;
-    font-weight: normal;
-    font-size: 35px;
-    margin: 0px 0px 10px; }
-  #main .main-content .tbl-dl, #main .main-content .tbl-cart {
-    outline: 4px solid #1b0107;
-    border: 2px solid #8581a4;
-    width: 100%;
-    background: #000000; }
-    #main .main-content .tbl-dl th, #main .main-content .tbl-cart th {
-      text-align: center;
-      border: 2px solid #8581a4;
-      font-size: 23px;
-      font-weight: normal;
-      vertical-align: middle;
-      line-height: 20px; }
-    #main .main-content .tbl-dl th + th, #main .main-content .tbl-cart th + th {
-      font-size: 17px; }
-    #main .main-content .tbl-dl th + th + th, #main .main-content .tbl-cart th + th + th {
-      font-size: 23px; }
-    #main .main-content .tbl-dl td, #main .main-content .tbl-cart td {
-      border: 2px solid #8581a4;
-      height: 20px; }
-
-#main .navigation {
-  padding: 15px 0px 0px;
-  text-align: center; }
-  #main .navigation ul {
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    vertical-align: middle; }
-    #main .navigation ul li {
-      margin: 0px 5px; }
-      #main .navigation ul li a {
-        font-size: 23px;
-        font-weight: 700;
-        display: block;
-        color: #8581a4; }
-      #main .navigation ul li.active a {
-        color: #fff; }
-  #main .navigation a.btn {
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    vertical-align: middle; }
-
-#main input[type="text"], #main input[type="password"] {
-  font-weight: 700;
-  color: #fff;
-  font-size: 22px;
-  font-style: normal;
-  border: 1px solid #ffffff;
-  height: 41px;
-  line-height: 41px;
-  border-radius: 5px;
-  margin-bottom: 6px;
-  background: #161421;
-  width: 250px;
-  text-align: left; }
-
-#main input[type="submit"] {
-  color: #fff;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  vertical-align: top;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 27px;
-  padding: 0px 25px;
-  background: #8581a4;
-  border-radius: 5px;
-  border: none; }
-  #main input[type="submit"]:hover {
-    opacity: 0.7; }
-
-#main .frm-forget p {
-  text-align: center;
-  margin-bottom: 30px; }
-  #main .frm-forget p.note {
-    font-weight: 700;
-    font-size: 13px;
-    color: #ff0048; }
-
-#main #frm-login p {
-  text-align: center; }
-  #main #frm-login p label.error {
-    display: block;
-    font-weight: 700;
-    font-size: 13px;
-    color: #ff0048;
-    margin: -2px 0px 15px; }
-
-#main .link-control {
-  text-align: center;
-  font-weight: 700;
-  color: #8581a4;
-  font-size: 19px;
-  margin: 30px 0px 1px; }
-  #main .link-control .login-with {
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    vertical-align: top; }
-    #main .link-control .login-with a {
-      display: -moz-inline-stack;
-      display: inline-block;
-      zoom: 1;
-      *display: inline;
-      vertical-align: middle;
-      margin: 0px 0px 0px 20px; }
-  #main .link-control a {
-    color: inherit; }
-
-#main .frm-register .col {
-  width: 31%;
-  margin: 0px 1%; }
-
-#main .frm-register p {
-  position: relative;
-  text-align: center; }
-  #main .frm-register p label.error {
-    display: block;
-    font-weight: 700;
-    font-size: 13px;
-    color: #ff0048;
-    margin: -2px 0px 15px; }
-
-#main .frm-register input[required] + label:after {
-  content: '*';
-  color: #ff0048;
-  position: absolute;
-  bottom: 100%;
-  left: 10px; }
-
-#main .frm-register .roles-container {
-  margin-bottom: 30px; }
-  #main .frm-register .roles-container p {
-    font-size: 13px;
-    font-weight: 700;
-    color: #fcb41d;
-    margin: 10px 0px 0px; }
-    #main .frm-register .roles-container p + p {
-      color: #eddcdd;
-      font-size: 15px; }
-      #main .frm-register .roles-container p + p input[type="checkbox"] {
-        display: none; }
-        #main .frm-register .roles-container p + p input[type="checkbox"] + label:before {
-          content: "";
-          position: absolute;
-          right: 100%;
-          top: 0px;
-          background: url(images/cbx.png) no-repeat left top;
-          width: 34px;
-          height: 28px; }
-        #main .frm-register .roles-container p + p input[type="checkbox"]:checked + label:before {
-          content: "";
-          width: 34px;
-          height: 28px;
-          background: url(images/cbx-checked.png) no-repeat left top; }
-        #main .frm-register .roles-container p + p input[type="checkbox"]:checked + label:after {
-          font-weight: bold; }
-      #main .frm-register .roles-container p + p label {
-        cursor: pointer;
+      #main .link-control .login-with a {
         display: -moz-inline-stack;
         display: inline-block;
         zoom: 1;
         *display: inline;
         vertical-align: middle;
-        position: relative;
-        line-height: 28px; }
-
-#main .frm-register input[type="submit"] {
-  background: #278b3f;
-  padding: 0px 30px; }
-
-#main .tabs {
-  margin-left: 0px;
-  padding-left: 60px; }
-  #main .tabs li {
-    padding: 0px; }
-    #main .tabs li a {
+        margin: 0px 0px 0px 20px; }
+    #main .link-control a {
+      color: inherit; }
+  #main .frm-register .col {
+    width: 31%;
+    margin: 0px 1%; }
+  #main .frm-register p {
+    position: relative;
+    text-align: center; }
+    #main .frm-register p label.error {
       display: block;
-      font-size: 35px;
-      padding: 0px 20px;
-      line-height: 50px;
-      color: #8581a4; }
-      #main .tabs li a.active {
-        background: #2c2943;
-        color: #fff; }
-  #main .tabs.tabs-small li a {
-    font-size: 21px;
-    padding: 0px 15px; }
-  #main .tabs.tabs-vertical {
-    margin: 10px 0px 0px;
-    padding: 0px;
-    list-style: none; }
-    #main .tabs.tabs-vertical li {
-      display: block;
-      margin-bottom: 2px; }
-      #main .tabs.tabs-vertical li a {
-        background: #3d3b71;
-        padding: 0px 10px;
-        line-height: 97px;
-        border-radius: 5px 0px 0px 5px;
-        opacity: 0.7; }
-        #main .tabs.tabs-vertical li a.active {
-          background: #524e95;
-          opacity: 1; }
-
-#main .tab-content {
-  background: #2c2943;
-  padding: 35px 50px; }
-  #main .tab-content.padding-normal {
-    padding: 5px 25px 10px; }
-  #main .tab-content .list-cart {
-    padding-bottom: 10px; }
-    #main .tab-content .list-cart li {
-      position: relative;
+      font-weight: 700;
+      font-size: 13px;
+      color: #ff0048;
+      margin: -2px 0px 15px; }
+  #main .frm-register input[required] + label:after {
+    content: '*';
+    color: #ff0048;
+    position: absolute;
+    bottom: 100%;
+    left: 10px; }
+  #main .frm-register .roles-container {
+    margin-bottom: 30px; }
+    #main .frm-register .roles-container p {
+      font-size: 13px;
+      font-weight: 700;
+      color: #fcb41d;
+      margin: 10px 0px 0px; }
+      #main .frm-register .roles-container p + p {
+        color: #eddcdd;
+        font-size: 15px; }
+        #main .frm-register .roles-container p + p input[type="checkbox"] {
+          display: none; }
+          #main .frm-register .roles-container p + p input[type="checkbox"] + label:before {
+            content: "";
+            position: absolute;
+            right: 100%;
+            top: 0px;
+            background: url(images/cbx.png) no-repeat left top;
+            width: 34px;
+            height: 28px; }
+          #main .frm-register .roles-container p + p input[type="checkbox"]:checked + label:before {
+            content: "";
+            width: 34px;
+            height: 28px;
+            background: url(images/cbx-checked.png) no-repeat left top; }
+          #main .frm-register .roles-container p + p input[type="checkbox"]:checked + label:after {
+            font-weight: bold; }
+        #main .frm-register .roles-container p + p label {
+          cursor: pointer;
+          display: -moz-inline-stack;
+          display: inline-block;
+          zoom: 1;
+          *display: inline;
+          vertical-align: middle;
+          position: relative;
+          line-height: 28px; }
+  #main .frm-register input[type="submit"] {
+    background: #278b3f;
+    padding: 0px 30px; }
+  #main .tabs {
+    margin-left: 0px;
+    padding-left: 60px; }
+    #main .tabs li {
+      padding: 0px; }
+      #main .tabs li a {
+        display: block;
+        font-size: 35px;
+        padding: 0px 20px;
+        line-height: 50px;
+        color: #8581a4; }
+        #main .tabs li a.active {
+          background: #2c2943;
+          color: #fff; }
+    #main .tabs.tabs-small li a {
+      font-size: 21px;
+      padding: 0px 15px; }
+    #main .tabs.tabs-vertical {
+      margin: 10px 0px 0px;
       padding: 0px;
-      margin-left: 75px;
+      list-style: none; }
+      #main .tabs.tabs-vertical li {
+        display: block;
+        margin-bottom: 2px; }
+        #main .tabs.tabs-vertical li a {
+          background: #3d3b71;
+          padding: 0px 10px;
+          line-height: 97px;
+          border-radius: 5px 0px 0px 5px;
+          opacity: 0.7; }
+          #main .tabs.tabs-vertical li a.active {
+            background: #524e95;
+            opacity: 1; }
+  #main .tab-content {
+    background: #2c2943;
+    padding: 35px 50px; }
+    #main .tab-content.padding-normal {
+      padding: 5px 25px 10px; }
+    #main .tab-content .list-cart {
+      padding-bottom: 10px; }
+      #main .tab-content .list-cart li {
+        position: relative;
+        padding: 0px;
+        margin-left: 75px;
+        border-radius: 5px; }
+        #main .tab-content .list-cart li span {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          display: block;
+          height: 39px;
+          line-height: 39px;
+          text-align: center;
+          font-size: 23px;
+          color: #fff; }
+        #main .tab-content .list-cart li:first-child {
+          margin-left: 0px; }
+    #main .tab-content .tab-content {
+      background: #524e95;
+      padding: 5px 13px;
+      float: right;
+      width: 883px;
       border-radius: 5px; }
-      #main .tab-content .list-cart li span {
-        position: absolute;
-        bottom: 0px;
-        left: 0px;
-        right: 0px;
-        display: block;
-        height: 39px;
-        line-height: 39px;
-        text-align: center;
-        font-size: 23px;
-        color: #fff; }
-      #main .tab-content .list-cart li:first-child {
-        margin-left: 0px; }
-  #main .tab-content .tab-content {
-    background: #524e95;
-    padding: 5px 13px;
-    float: right;
-    width: 883px;
-    border-radius: 5px; }
-    #main .tab-content .tab-content .list-messeger {
-      overflow-x: hidden;
-      overflow-y: auto;
-      height: 270px;
-      padding-right: 10px; }
-      #main .tab-content .tab-content .list-messeger li {
-        display: block;
-        border: 1px solid #8581a4;
-        border-radius: 5px;
-        box-shadow: inset 0px 0px 25px #000;
-        background: #29274a;
-        padding: 10px 25px;
-        margin-bottom: 3px; }
-        #main .tab-content .tab-content .list-messeger li .content-messeger {
-          font-size: 21px;
-          color: #7c7c7c; }
-        #main .tab-content .tab-content .list-messeger li a.btn-delivery {
-          font-weight: 700;
-          color: #fff;
-          font-size: 34px;
-          background: #8581a4;
-          display: -moz-inline-stack;
-          display: inline-block;
-          zoom: 1;
-          *display: inline;
-          vertical-align: middle;
+      #main .tab-content .tab-content .list-messeger {
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: 270px;
+        padding-right: 10px; }
+        #main .tab-content .tab-content .list-messeger li {
+          display: block;
+          border: 1px solid #8581a4;
           border-radius: 5px;
-          margin-top: 5px;
-          padding: 0px 15px; }
-          #main .tab-content .tab-content .list-messeger li a.btn-delivery:hover {
-            opacity: 0.7; }
-        #main .tab-content .tab-content .list-messeger li .text-delivery {
-          display: -moz-inline-stack;
-          display: inline-block;
-          zoom: 1;
-          *display: inline;
-          vertical-align: middle;
-          font-size: 20px;
-          font-weight: 700;
-          color: #fff;
-          line-height: 28px;
-          margin-left: 20px; }
-          #main .tab-content .tab-content .list-messeger li .text-delivery b {
+          box-shadow: inset 0px 0px 25px #000;
+          background: #29274a;
+          padding: 10px 25px;
+          margin-bottom: 3px; }
+          #main .tab-content .tab-content .list-messeger li .content-messeger {
+            font-size: 21px;
+            color: #7c7c7c; }
+          #main .tab-content .tab-content .list-messeger li a.btn-delivery {
+            font-weight: 700;
+            color: #fff;
+            font-size: 34px;
+            background: #8581a4;
             display: -moz-inline-stack;
             display: inline-block;
             zoom: 1;
             *display: inline;
             vertical-align: middle;
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            box-shadow: inset 0px 0px 5px #000;
-            background: #1f1d35;
-            border: 1px solid #827fa2;
-            text-align: center;
-            line-height: 38px;
-            margin-right: 5px; }
-        #main .tab-content .tab-content .list-messeger li .btn-delivered {
+            border-radius: 5px;
+            margin-top: 5px;
+            padding: 0px 15px; }
+            #main .tab-content .tab-content .list-messeger li a.btn-delivery:hover {
+              opacity: 0.7; }
+          #main .tab-content .tab-content .list-messeger li .text-delivery {
+            display: -moz-inline-stack;
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+            vertical-align: middle;
+            font-size: 20px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 28px;
+            margin-left: 20px; }
+            #main .tab-content .tab-content .list-messeger li .text-delivery b {
+              display: -moz-inline-stack;
+              display: inline-block;
+              zoom: 1;
+              *display: inline;
+              vertical-align: middle;
+              width: 38px;
+              height: 38px;
+              border-radius: 50%;
+              box-shadow: inset 0px 0px 5px #000;
+              background: #1f1d35;
+              border: 1px solid #827fa2;
+              text-align: center;
+              line-height: 38px;
+              margin-right: 5px; }
+          #main .tab-content .tab-content .list-messeger li .btn-delivered {
+            display: -moz-inline-stack;
+            display: inline-block;
+            zoom: 1;
+            *display: inline;
+            vertical-align: middle;
+            font-size: 34px;
+            font-weight: 700;
+            color: #fff;
+            line-height: 28px;
+            margin-left: 20px;
+            background: url(images/icon-minus.png) no-repeat center right;
+            padding-right: 30px; }
+      #main .tab-content .tab-content .control-delivery {
+        text-align: center;
+        padding: 10px 0px 5px;
+        min-height: 48px; }
+        #main .tab-content .tab-content .control-delivery a.btn-deliveryall {
           display: -moz-inline-stack;
           display: inline-block;
           zoom: 1;
           *display: inline;
-          vertical-align: middle;
+          vertical-align: top;
           font-size: 34px;
-          font-weight: 700;
           color: #fff;
-          line-height: 28px;
-          margin-left: 20px;
-          background: url(images/icon-minus.png) no-repeat center right;
-          padding-right: 30px; }
-    #main .tab-content .tab-content .control-delivery {
-      text-align: center;
-      padding: 10px 0px 5px;
-      min-height: 48px; }
-      #main .tab-content .tab-content .control-delivery a.btn-deliveryall {
-        display: -moz-inline-stack;
-        display: inline-block;
-        zoom: 1;
-        *display: inline;
-        vertical-align: top;
-        font-size: 34px;
-        color: #fff;
-        background: #fcb41d;
-        padding: 0px 15px;
-        font-weight: 700;
-        border-radius: 5px;
-        cursor: pointer; }
-        #main .tab-content .tab-content .control-delivery a.btn-deliveryall:hover {
-          opacity: 0.7; }
-  #main .tab-content.tab-padding {
-    padding: 10px; }
-  #main .tab-content ul.tabs {
-    padding-left: 0px; }
-    #main .tab-content ul.tabs li a {
-      font-size: 23px; }
-      #main .tab-content ul.tabs li a.active {
-        background: #1b0107; }
-
-#main .frm-cart {
-  /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */ }
+          background: #fcb41d;
+          padding: 0px 15px;
+          font-weight: 700;
+          border-radius: 5px;
+          cursor: pointer; }
+          #main .tab-content .tab-content .control-delivery a.btn-deliveryall:hover {
+            opacity: 0.7; }
+    #main .tab-content.tab-padding {
+      padding: 10px; }
+    #main .tab-content ul.tabs {
+      padding-left: 0px; }
+      #main .tab-content ul.tabs li a {
+        font-size: 23px; }
+        #main .tab-content ul.tabs li a.active {
+          background: #1b0107; }
   #main .frm-cart .frm-left {
     width: 270px; }
     #main .frm-cart .frm-left input[type="text"] {
@@ -798,7 +851,23 @@ textarea:focus {
       width: 160px; }
   #main .frm-cart p {
     margin-bottom: 10px; }
-  #main .frm-cart select {
+  #main .frm-cart input[type="submit"] {
+    background: #fcb41d;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px; }
+  #main .frm-cart .align-center label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f50248;
+    display: block;
+    margin-top: 5px; }
+    #main .frm-cart .align-center label:after {
+      display: none; }
+  #main .history-content .tbl-dl th {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+  #main select {
     padding: 0px 15px;
     margin: 0;
     -webkit-border-radius: 4px;
@@ -815,16 +884,17 @@ textarea:focus {
     cursor: pointer;
     border: 1px solid #fff; }
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
-    #main .frm-cart select {
+    #main select {
       padding-right: 18px;
       height: 41px;
       line-height: 41px;
       width: 250px;
       font-weight: 700;
       font-size: 22px; } }
-  #main .frm-cart label {
-    position: relative; }
-    #main .frm-cart label:after {
+  #main label.slt {
+    position: relative;
+    margin-bottom: 10px; }
+    #main label.slt:after {
       content: '';
       right: 6px;
       top: 0px;
@@ -832,30 +902,13 @@ textarea:focus {
       height: 41px;
       position: absolute;
       background: url(images/arrow-down.png) no-repeat center center; }
-    #main .frm-cart label span.note {
+    #main label.slt span.note {
       position: absolute;
       left: 100%;
       top: 0px;
       width: 100%;
       line-height: 49px;
       margin-left: 5px; }
-  #main .frm-cart input[type="submit"] {
-    background: #fcb41d;
-    color: #fff;
-    padding-left: 10px;
-    padding-right: 10px; }
-  #main .frm-cart .align-center label {
-    font-size: 14px;
-    font-weight: 700;
-    color: #f50248;
-    display: block;
-    margin-top: 5px; }
-    #main .frm-cart .align-center label:after {
-      display: none; }
-
-#main .history-content .tbl-dl th {
-  padding-top: 10px;
-  padding-bottom: 10px; }
 
 /*==========================================================
 	6. FOOTER

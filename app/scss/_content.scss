@@ -97,6 +97,79 @@
         }
       }
     }
+    &.frm-edit{
+      .frm-left{
+        margin-left: 0px;
+        p{
+          margin-top: 15px;
+        }
+        label.slt{
+          span{
+            font-size: 22px;
+            font-weight: 700;
+            color: #7c7c7c;
+            @include dis(middle);
+            margin-right: 10px;
+          }
+          select{
+            @include dis(middle);
+            width: 150px;
+          }
+        }
+        .date{
+          input[type="text"]{
+            width: 70px;
+            @include dis(middle);
+            font-size: 19px;
+          }
+          span{
+            @include dis(middle);
+            font-size: 20px;
+            color: #7c7c7c;
+            padding: 0px 4px;
+          }
+        }
+      }
+      .frm-right{
+        p{
+          font-size: 19px;
+          color: #8581a4;
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+        .align-center{
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+  .frm-change-password, .manager-account{
+    width: 250px;
+    margin: 10px auto;
+    p{
+      margin-bottom: 15px;
+      label.error{
+        font-weight: 700;
+        font-size: 13px;
+        color: #ff0048;
+        display: block;
+      }
+    }
+    input[type="submit"]{
+      color: #fff;
+      @include dis(middle);
+      vertical-align: top;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 27px;
+      padding: 0px 25px;
+      background: #8581a4;
+      border-radius: 5px;
+      border: none;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
   }
   .main-content{
     padding: 5px 25px 5px 40px;
@@ -502,56 +575,6 @@
     p{
       margin-bottom: 10px;
     }
-    select {
-      padding: 0px 15px;
-      margin: 0;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      border-radius: 4px;
-      background: #000;
-      color: #888;
-      border: none;
-      outline: none;
-      display: inline-block;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      cursor: pointer;
-      border: 1px solid #fff;
-    }
-
-    /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
-    @media screen and (-webkit-min-device-pixel-ratio: 0) {
-      select {
-        padding-right: 18px;
-        height: 41px;
-        line-height: 41px;
-        width: 250px;
-        font-weight: 700;
-        font-size: 22px;
-      }
-    }
-
-    label{
-      position: relative;
-      &:after {
-        content: '';
-        right: 6px;
-        top: 0px;
-        width: 24px;
-        height: 41px;
-        position: absolute;
-        background: url(images/arrow-down.png) no-repeat center center;
-      }
-      span.note{
-        position: absolute;
-        left: 100%;
-        top: 0px;
-        width: 100%;
-        line-height: 49px;
-        margin-left: 5px;
-      }
-    }
     input[type="submit"]{
       background: #fcb41d;
       color: #fff;
@@ -575,6 +598,57 @@
         padding-top: 10px;
         padding-bottom: 10px;
       }
+    }
+  }
+  select {
+    padding: 0px 15px;
+    margin: 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background: #000;
+    color: #888;
+    border: none;
+    outline: none;
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    border: 1px solid #fff;
+  }
+
+  /* Targetting Webkit browsers only. FF will show the dropdown arrow with so much padding. */
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    select {
+      padding-right: 18px;
+      height: 41px;
+      line-height: 41px;
+      width: 250px;
+      font-weight: 700;
+      font-size: 22px;
+    }
+  }
+
+  label.slt{
+    position: relative;
+    margin-bottom: 10px;
+    &:after {
+      content: '';
+      right: 6px;
+      top: 0px;
+      width: 24px;
+      height: 41px;
+      position: absolute;
+      background: url(images/arrow-down.png) no-repeat center center;
+    }
+    span.note{
+      position: absolute;
+      left: 100%;
+      top: 0px;
+      width: 100%;
+      line-height: 49px;
+      margin-left: 5px;
     }
   }
 }

@@ -22,13 +22,83 @@ html
                 li
                   a(href='#tab5') THƯ
               #tab1.tab-padding.tab-content
-                p Tab1
+                form.frm-manager-account
+                  .frm-left.fleft
+                    h4 Thông tin tài khoản:
+                    p
+                      input(type="text", name="", placeholder="Tên đăng nhập")
+                    p
+                      input(type="text", name="", placeholder="Mật khẩu")
+                    p
+                      input(type="text", name="", placeholder="Số điện thoại")
+                    p
+                      input(type="text", name="", placeholder="Email")
+                  //end frm-left
+                  .frm-right.fright
+                    h4 Thông tin cá nhân:
+                    p
+                      input(type="text", name="", placeholder="Họ tên")
+                    p
+                      .date
+                        input(type="text", name="", placeholder="Ngày")
+                        span /
+                        input(type="text", name="", placeholder="Tháng")
+                        span /
+                        input(type="text", name="", placeholder="Năm")
+                    .align-center
+                      input(type="submit", value="THAY ĐỔI")
+                  //end frm-right
+                  .clearfix
               //end tab1
               #tab2.tab-padding.tab-content
-                p This is the 2nd tab.
+                .frm-change-password
+                  p
+                    input(type="password", name="", placeholder="Mật khẩu cũ")
+                    label.error Mật khẩu không đúng
+                  p
+                    input(type="password", name="", placeholder="Mật khẩu mới")
+                    label.error &nbsp;
+                  p
+                    input(type="password", name="", placeholder="Nhập lại mật khẩu mới")
+                    label.error Mật khẩu không đúng
+                  .align-center
+                    input(type="submit", value="CẬP NHẬT")
               //end tab2
-              #tab3.tab-padding.tab-content
-                p And this is the 3rd tab.
+              #tab3.padding-normal.tab-content
+                form.frm-transfer.frm-edit
+                  .frm-left.fleft
+                    p
+                      input(type="text", name="", placeholder="Số điện thoại")
+                    p
+                      input(type="text", name="", placeholder="Email")
+                    p
+                      input(type="text", name="", placeholder="Họ tên")
+                    p
+                      label(for="").slt
+                        span Giới tinh
+                        select(name="")
+                          option(value="", selected, disable) Số lượng
+                          option(value="") Option01
+                          option(value="") Option02
+                          option(value="") Option03
+                          option(value="") Option04
+                          option(value="") Option05
+                    p
+                      .date
+                        input(type="text", name="", placeholder="Ngày")
+                        span /
+                        input(type="text", name="", placeholder="Tháng")
+                        span /
+                        input(type="text", name="", placeholder="Năm")
+                  //end frm-left
+                  .frm-right.fright
+                    p * Thông tin tài khoản chỉ cập nhật 1 lần duy nhất để xác minh tài khoản và trao thưởng chính xác.
+                    p * Hệ thống sẽ gửi email để xác nhận tài khoản.
+                    p * Bạn vui lòng nhập chính xác thông tin để hệ thống thực hiện việc trao thưởng và xác minh tài khoản.
+                    .align-center
+                      input(type="submit", value="CẬP NHẬT")
+                  //end frm-right
+                  .clearfix
               //end tab3
               #tab4.padding-normal.tab-content
                 ul.list-inline.tabs
