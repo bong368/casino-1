@@ -1,0 +1,99 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    #wrapper
+      include ./includes/header.jade
+      main#main.site-main
+        .container
+          .wrap-content.no-background
+            a.btn-back(href="#")
+              img(src="images/btn-back.png", alt="")
+            .main-content
+              ul.list-inline.tabs
+                li
+                  a.active(href='#tab1') NẠP XÈNG
+                li
+                  a(href='#tab2') BÁN XÈNG
+                li
+                  a(href='#tab3') CỬA HÀNG
+              #tab1.tab-content.padding-normal
+                form.frm-cart-from-bank
+                  .fleft.frm-col.frm-left
+                    h6 Chọn ngân hàng:
+                    p
+                      label(for="").slt
+                        select(name="")
+                          option(value="", selected, disable) Chọn ngân hàng
+                          option(value="") Option01
+                          option(value="") Option02
+                          option(value="") Option03
+                          option(value="") Option04
+                          option(value="") Option05
+                    .align-center.selected-bank
+                      img(src="images/logo-bank.png", alt="")
+                  //end frm-left
+                  .fleft.frm-col.frm-center
+                    h6 Giá trị nạp:
+                    p
+                      label(for="").slt
+                        select(name="")
+                          option(value="", selected, disable) Tối thiểu 50k
+                          option(value="") Option01
+                          option(value="") Option02
+                          option(value="") Option03
+                          option(value="") Option04
+                          option(value="") Option05
+                    p
+                      input.capcha(type='text', name='', placeholder='Nhập mã')
+                      .capcha
+                        img(src='images/capcha.png', alt='')
+                    .align-center
+                      input(type="submit", value="NẠP THẺ")
+                  //end frm-center
+                  .fright.frm-col.frm-right
+                    p QUY ĐỊNH CHUNG:
+                    ul
+                      li - Không mất phí thanh toán.
+                      li - Thanh toán nhanh gọn và có thể sử dụng dịch vụ ngay.
+                      li - Thẻ phải có chức năng thanh toán trực tuyến.
+                      li - Trường hợp xẩy ra lỗi vui lòng liên hệ Hotline CSKH.
+                  //end frm-right
+                  .clearfix
+                .list-bank
+                  h4 Danh sách ngân hành hỗ trợ: 
+                  .owl-carousel
+                    .item
+                      img(src="images/slide-img.png", alt="")
+                    .item
+                      img(src="images/slide-img.png", alt="")
+                    .item
+                      img(src="images/slide-img.png", alt="")
+                    .item
+                      img(src="images/slide-img.png", alt="")
+                    .item
+                      img(src="images/slide-img.png", alt="")
+                    .item
+                      img(src="images/slide-img.png", alt="")
+                    .item
+                      img(src="images/slide-img.png", alt="")
+                    .item
+                      img(src="images/slide-img.png", alt="")
+                    .item
+                      img(src="images/slide-img.png", alt="")
+                    .item
+                      img(src="images/slide-img.png", alt="")
+              #tab2.tab-content
+                p This is the 2nd tab.
+              #tab3.tab-content
+                p And this is the 3rd tab.
+
+            //end main-content
+          //end wrap-content
+      // .site-main
+      include ./includes/footer.jade
+      #overlay
+        .float-button
+          .num1 9
+          .num2 9
+    // #wrapper

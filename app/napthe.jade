@@ -1,0 +1,86 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    #wrapper
+      include ./includes/header.jade
+      main#main.site-main
+        .container
+          .wrap-content.no-background
+            a.btn-back(href="#")
+              img(src="images/btn-back.png", alt="")
+            .main-content
+              ul.list-inline.tabs
+                li
+                  a.active(href='#tab1') NẠP XÈNG
+                li
+                  a(href='#tab2') BÁN XÈNG
+                li
+                  a(href='#tab3') CỬA HÀNG
+              #tab1.tab-content
+                form.frm-cart
+                  .frm-left.fleft
+                    h5.type-card Thẻ Viettel
+                    p
+                      input(type="text", name="", placeholder="Serial")
+                    p
+                      input(type="text", name="", placeholder="Mã thẻ")
+                    p
+                      input.capcha(type='text', name='', placeholder='Nhập mã')
+                      .capcha
+                        img(src='images/capcha.png', alt='')
+                    .align-center
+                      input(type="submit", value="NẠP THẺ")
+                      label Sai mã thẻ hoặc serial
+                  //end frm-left
+                  .frm-right.frm-right-big.fright
+                    table.tbl-cart
+                      tr
+                        th Mệnh giá
+                        th Giá bán
+                        th Xèng
+                      tr
+                        td
+                        td
+                        td
+                      tr
+                        td
+                        td
+                        td
+                      tr
+                        td
+                        td
+                        td
+                      tr
+                        td
+                        td
+                        td
+                      tr
+                        td
+                        td
+                        td
+                      tr
+                        td
+                        td
+                        td
+                      tr
+                        td
+                        td
+                        td
+                      tr
+                        td
+                        td
+                        td
+                      
+                  //end frm-right
+                  .clearfix
+              #tab2.tab-content
+                p This is the 2nd tab.
+              #tab3.tab-content
+                p And this is the 3rd tab.
+
+            //end main-content
+          //end wrap-content
+      // .site-main
+      include ./includes/footer.jade
+    // #wrapper

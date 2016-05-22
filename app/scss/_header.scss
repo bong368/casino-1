@@ -44,7 +44,7 @@
           display: block;
         }
         b{
-          font-size: 21px;
+          font-size: 20px;
         }
       }
       .money-user, .diamond-user{
@@ -147,8 +147,30 @@
     padding: 3px 0px;
     color: #000;
     font-size: 15px;
+    position: relative;
+    line-height: 27px;
+    height: 27px;
+    overflow: hidden;
     p{
       opacity: 0.5;
+      -webkit-animation: mymove 30s infinite; /* Chrome, Safari, Opera */
+      animation: mymove 30s infinite;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      position: absolute;
+      top: 0px;
+      width: 1000%;
     }
   }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 100%;}
+    to {left: -100%;}
+}
+
+@keyframes mymove {
+    from {left: 100%;}
+    to {left: -100%;}
 }

@@ -78,54 +78,94 @@
       <!-- End .site-header-->
       <main id="main" class="site-main">
         <div class="container">
-          <div class="wrap-content"><a href="#" class="btn-back"><img src="images/btn-back.png" alt=""></a>
-            <form class="frm-transfer">
-              <div class="frm-left fleft">
-                <p>
-                  <input type="text" name="" placeholder="chọn loại thẻ">
-                </p>
-                <p>
-                  <input type="text" name="" placeholder="Chọn mệnh giá">
-                </p>
-                <p>
-                  <input type="text" name="" placeholder="Số lượng">
-                </p>
-                <p>
-                  <input type="text" name="" placeholder="Số lượng">
-                </p>
-                <p>
-                  <input type="text" name="" placeholder="Nhập mã" class="capcha">
-                  <div class="capcha"><img src="images/capcha.png" alt=""></div>
-                </p>
-                <div class="align-center">
-                  <input type="submit" value="chuyển khoản">
-                </div>
+          <div class="wrap-content no-background"><a href="#" class="btn-back"><img src="images/btn-back.png" alt=""></a>
+            <div class="main-content">
+              <ul class="list-inline tabs">
+                <li><a href="#tab1" class="active">NẠP XÈNG</a></li>
+                <li><a href="#tab2">BÁN XÈNG</a></li>
+                <li><a href="#tab3">CỬA HÀNG</a></li>
+              </ul>
+              <div id="tab1" class="tab-content">
+                <form class="frm-cart">
+                  <div class="frm-left fleft">
+                    <h5 class="type-card">Thẻ Viettel</h5>
+                    <p>
+                      <input type="text" name="" placeholder="Serial">
+                    </p>
+                    <p>
+                      <input type="text" name="" placeholder="Mã thẻ">
+                    </p>
+                    <p>
+                      <input type="text" name="" placeholder="Nhập mã" class="capcha">
+                      <div class="capcha"><img src="images/capcha.png" alt=""></div>
+                    </p>
+                    <div class="align-center">
+                      <input type="submit" value="NẠP THẺ">
+                      <label>Sai mã thẻ hoặc serial</label>
+                    </div>
+                  </div>
+                  <!--end frm-left-->
+                  <div class="frm-right frm-right-big fright">
+                    <table class="tbl-cart">
+                      <tr>
+                        <th>Mệnh giá</th>
+                        <th>Giá bán</th>
+                        <th>Xèng</th>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--end frm-right-->
+                  <div class="clearfix"></div>
+                </form>
               </div>
-              <!--end frm-left-->
-              <div class="frm-right fleft">
-                <p>
-                  <input type="text" name="" placeholder="chọn loại thẻ">
-                </p>
-                <div class="note">
-                  <h6>* Phí giao dịch 2% trên giá trị chuyển khoản</h6>
-                  <p>Quy định chuyển khoản:</p>
-                  <ul>
-                    <li>Giá trị giao dịch tối thiểu 10,000 xèng</li>
-                    <li>Chi phí giao dịch : 2% giá trị giao dịch</li>
-                    <li>Không giới hạn số lần giao dịch và giá trị giao dịch</li>
-                  </ul>
-                  <p>Chú ý:</p>
-                  <ul>
-                    <li>Nickname là tên nhân vật \(tên hiển thị trong game\)</li>
-                    <li>Các giao dịch chuyển nhầm tên tài khoản chúng tôi xem là giao dịch thành công và không thực hiện hoàn trả.</li>
-                    <li>Bạn vui lòng kiểm tra kỹ nickname trước khi thực hiện giao dịch</li>
-                  </ul>
-                </div>
+              <div id="tab2" class="tab-content">
+                <p>This is the 2nd tab.</p>
               </div>
-              <!--end frm-right-->
-              <div class="clearfix"></div>
-            </form>
-            <!--end frm-transfer--><a href="#" class="btn-shop">đại lý</a>
+              <div id="tab3" class="tab-content">
+                <p>And this is the 3rd tab.</p>
+              </div>
+            </div>
+            <!--end main-content-->
           </div>
           <!--end wrap-content-->
         </div>
