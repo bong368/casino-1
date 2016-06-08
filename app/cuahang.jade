@@ -12,66 +12,82 @@ html
             .main-content
               ul.list-inline.tabs
                 li
-                  a.active(href='#tab1') NẠP XÈNG
+                  a.active(href='#tab1') THẺ ĐIỆN THOẠI
                 li
-                  a(href='#tab2') BÁN XÈNG
+                  a(href='#tab2') THẺ GAME
                 li
-                  a(href='#tab3') CỬA HÀNG
+                  a(href='#tab3') VẬT PHẨM
               #tab1.tab-content
                 form.frm-cart
                   .frm-left.fleft
-                    h5.type-card Thẻ Viettel
                     p
-                      input(type="text", name="", placeholder="Serial")
+                      label(for="").slt
+                        select(name="")
+                          option(value="", selected, disable) Chọn loại thẻ
+                          option(value="") Option01
+                          option(value="") Option02
+                          option(value="") Option03
+                          option(value="") Option04
+                          option(value="") Option05
                     p
-                      input(type="text", name="", placeholder="Mã thẻ")
+                      label(for="").slt
+                        select(name="")
+                          option(value="", selected, disable) Chọn mệnh giá
+                          option(value="") Option01
+                          option(value="") Option02
+                          option(value="") Option03
+                          option(value="") Option04
+                          option(value="") Option05
+                    p
+                      label(for="").slt
+                        span.note * Mua tối đa được 5 thẻ
+                        select(name="")
+                          option(value="", selected, disable) Số lượng
+                          option(value="") Option01
+                          option(value="") Option02
+                          option(value="") Option03
+                          option(value="") Option04
+                          option(value="") Option05
                     p
                       input.capcha(type='text', name='', placeholder='Nhập mã')
                       .capcha
                         img(src='images/capcha.png', alt='')
                     .align-center
-                      input(type="submit", value="NẠP THẺ")
-                      label Sai mã thẻ hoặc serial
+                      input(type="submit", value="999,999,999,999")
+                      label * Số dư không đủ để thực hiện giao dịch
                   //end frm-left
-                  .frm-right.frm-right-big.fright
+                  .frm-right.fright
                     table.tbl-cart
                       tr
                         th Mệnh giá
                         th Giá bán
-                        th Xèng
                       tr
-                        td
-                        td
-                        td
-                      tr
-                        td
                         td
                         td
                       tr
                         td
                         td
-                        td
                       tr
-                        td
-                        td
-                        td
-                      tr
-                        td
                         td
                         td
                       tr
                         td
                         td
+                      tr
+                        td
                         td
                       tr
                         td
                         td
+                      tr
+                        td
                         td
                       tr
                         td
                         td
+                      tr
                         td
-                      
+                        td
                   //end frm-right
                   .clearfix
               #tab2.tab-content

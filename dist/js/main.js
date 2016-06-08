@@ -46,22 +46,28 @@
 			});
     }
 
-    $('.owl-carousel').owlCarousel({
-	    loop:true,
-	    autoplay: true,
-	    margin: 20,
-	    nav: true,
-	    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:5
-        },
-        1000:{
-            items:9
-        }
-	    }
-		})
+		if($('.owl-carousel').length != 0){
+			$('.owl-carousel').owlCarousel({
+		    loop:true,
+		    autoplay: true,
+		    margin: 20,
+		    nav: true,
+		    responsive:{
+	        0:{
+	            items:1
+	        },
+	        600:{
+	            items:5
+	        },
+	        1000:{
+	            items:9
+	        }
+		    }
+			})
+		}
+
+		if($('.float-button').length !=0){
+			$('.float-button').draggable();
+		}
 	});
 })(jQuery);
