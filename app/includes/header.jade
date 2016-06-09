@@ -3,9 +3,25 @@ header#header.site-header
     .logo
       a(href="#")
         img(src="images/logo.png", alt="")
-    .header-top
+    .header-top.clearfix
       include menu.jade
-      .status-wrap
+      .menu.fright
+        button.btn-menu
+          img(src="images/icon-menu.png", alt="")
+        .navigation
+          ul
+            li
+              a(href="#") item01
+            li
+              a(href="#") item02
+            li
+              a(href="#") item03
+            li
+              a(href="#") item04
+            li
+              a(href="#") item05
+      //end menu
+      .status-wrap.fright
         .welcome-user
           span welcome...
           b username
@@ -18,10 +34,6 @@ header#header.site-header
           button
             img(src="images/icon-plus.png", alt="")
       //end status-wrap
-      .menu
-        button.btn-menu
-          img(src="images/icon-menu.png", alt="")
-      //end menu
     //end header-top
     .header-bottom
       .status-result

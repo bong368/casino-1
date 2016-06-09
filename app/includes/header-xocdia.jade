@@ -1,0 +1,41 @@
+header#header.site-header.logined
+  .container
+    .logo
+      a(href="#")
+        img(src="images/logo-small.png", alt="")
+    .header-top.clearfix
+      include menu.jade
+      .menu.fright
+        button.btn-menu
+          img(src="images/icon-menu.png", alt="")
+        .navigation
+          ul
+            li
+              a(href="#") item01
+            li
+              a(href="#") item02
+            li
+              a(href="#") item03
+            li
+              a(href="#") item04
+            li
+              a(href="#") item05
+      //end menu
+      .status-wrap.fright
+        .welcome-user
+          span welcome...
+          b username
+        .money-user
+          span 999,999,999
+          button
+            img(src="images/icon-plus.png", alt="")
+        .diamond-user
+          span 999,999,999
+          button
+            img(src="images/icon-plus.png", alt="")
+      //end status-wrap
+    //end header-top
+    .auto-scroll
+      p text notification text notification text notification text notification text notification text notification text notification text notification text notification text
+  // end .container
+// End .site-header

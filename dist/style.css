@@ -186,21 +186,50 @@ textarea:focus {
       zoom: 1;
       *display: inline;
       vertical-align: top; }
-      #header .header-top .main-menu li a {
-        color: #fff;
-        text-transform: uppercase;
-        font-size: 16px;
-        padding: 15px 5px;
-        display: block; }
-      #header .header-top .main-menu li:hover a {
-        color: #999; }
+      #header .header-top .main-menu li {
+        position: relative; }
+        #header .header-top .main-menu li a {
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 16px;
+          padding: 15px 5px;
+          display: block; }
+        #header .header-top .main-menu li:hover a {
+          color: #999; }
+        #header .header-top .main-menu li:hover ul {
+          border: 1px solid #d4d5d9;
+          display: block;
+          opacity: 1;
+          top: 100%; }
+        #header .header-top .main-menu li ul {
+          position: absolute;
+          left: 0px;
+          top: 120%;
+          right: 0px;
+          z-index: 9;
+          border: 1px solid transparent;
+          display: none;
+          opacity: 0;
+          -webkit-transition: all 600ms ease;
+          -moz-transition: all 600ms ease;
+          -ms-transition: all 600ms ease;
+          -o-transition: all 600ms ease;
+          transition: all 600ms ease; }
+          #header .header-top .main-menu li ul li {
+            line-height: 34px;
+            border: none; }
+            #header .header-top .main-menu li ul li a {
+              padding: 0px 10px; }
+            #header .header-top .main-menu li ul li:hover a {
+              background: #1e1b1a; }
     #header .header-top .status-wrap {
       display: -moz-inline-stack;
       display: inline-block;
       zoom: 1;
       *display: inline;
       vertical-align: top;
-      padding: 4px 0px; }
+      padding: 4px 0px;
+      text-align: right; }
       #header .header-top .status-wrap .welcome-user {
         font-size: 16px;
         font-weight: 700;
@@ -212,11 +241,21 @@ textarea:focus {
         *display: inline;
         vertical-align: top;
         text-align: center;
-        margin-left: 10px; }
+        margin-left: 10px;
+        width: 95px; }
         #header .header-top .status-wrap .welcome-user span {
-          display: block; }
+          display: block;
+          text-overflow: ellipsis;
+          height: 17px;
+          white-space: nowrap;
+          overflow: hidden; }
         #header .header-top .status-wrap .welcome-user b {
-          font-size: 20px; }
+          font-size: 20px;
+          text-overflow: ellipsis;
+          height: 20px;
+          white-space: nowrap;
+          overflow: hidden;
+          display: block; }
       #header .header-top .status-wrap .money-user, #header .header-top .status-wrap .diamond-user {
         display: -moz-inline-stack;
         display: inline-block;
@@ -229,7 +268,8 @@ textarea:focus {
         color: #fcb41d;
         padding: 5px 28px;
         position: relative;
-        background: url(images/icon-dolar.png) no-repeat 5px center #111522; }
+        background: url(images/icon-dolar.png) no-repeat 5px center #111522;
+        width: 175px; }
         #header .header-top .status-wrap .money-user button, #header .header-top .status-wrap .diamond-user button {
           position: absolute;
           right: 0px;
@@ -254,7 +294,8 @@ textarea:focus {
       display: inline-block;
       zoom: 1;
       *display: inline;
-      vertical-align: top; }
+      vertical-align: top;
+      position: relative; }
       #header .header-top .menu button {
         border: none;
         background: none;
@@ -337,6 +378,54 @@ textarea:focus {
       position: absolute;
       top: 0px;
       width: 1000%; }
+  #header .navigation {
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    background: #000;
+    width: 150px;
+    z-index: 99;
+    display: none; }
+    #header .navigation ul {
+      border: 1px solid #ccc; }
+      #header .navigation ul li:first-child a {
+        border-top: none; }
+      #header .navigation ul li a {
+        display: block;
+        font-size: 15px;
+        color: #fff;
+        border-top: 1px solid #ccc;
+        padding: 5px 10px; }
+  #header .language {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 15px 5px;
+    display: block; }
+  #header .button-control {
+    margin-left: 50px; }
+    #header .button-control ul {
+      margin-top: 10px;
+      border: 1px solid #278b3f; }
+      #header .button-control ul li {
+        padding: 0px; }
+        #header .button-control ul li:hover a {
+          background: #278b3f; }
+        #header .button-control ul li:first-child a {
+          border-left: 0px; }
+        #header .button-control ul li a {
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 16px;
+          padding: 5px 15px;
+          display: block;
+          border-left: 1px solid #278b3f; }
+  #header.logined .logo {
+    position: absolute;
+    left: 20px;
+    top: 4px; }
+  #header.logined .header-top {
+    padding-left: 80px; }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
@@ -617,13 +706,19 @@ textarea:focus {
       font-size: 13px;
       color: #ff0048; }
   #main #frm-login p {
-    text-align: center; }
+    text-align: center;
+    position: relative;
+    margin-bottom: 25px; }
     #main #frm-login p label.error {
       display: block;
       font-weight: 700;
       font-size: 13px;
       color: #ff0048;
-      margin: -2px 0px 15px; }
+      margin: -2px 0px 15px;
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      right: 0px; }
   #main .link-control {
     text-align: center;
     font-weight: 700;
@@ -1136,6 +1231,27 @@ textarea:focus {
     color: #fff;
     line-height: 20px;
     text-align: center; }
+
+.owl-carousel-home {
+  padding: 0px 70px;
+  margin: 30px 0px;
+  position: relative; }
+  .owl-carousel-home .owl-prev {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 50px;
+    background: url(images/bt-left.png) no-repeat center center;
+    text-indent: -9999px; }
+  .owl-carousel-home .owl-next {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 50px;
+    text-indent: -9999px;
+    background: url(images/bt-right.png) no-repeat center center; }
 
 /*==========================================================
 	6. FOOTER

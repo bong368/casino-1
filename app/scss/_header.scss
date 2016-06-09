@@ -15,6 +15,7 @@
     .main-menu{
       @include dis(top);
       li{
+        position: relative;
         a{
           color: #fff;
           text-transform: uppercase;;
@@ -26,12 +27,46 @@
           a{
             color: #999;
           }
+          ul{
+            border: 1px solid #d4d5d9;
+            display: block;
+            opacity: 1;
+            top: 100%;
+          }
+        }
+        ul{
+          position: absolute;
+          left: 0px;
+          top: 120%;
+          right: 0px;
+          z-index: 9;
+          border: 1px solid transparent;
+          display: none;
+          opacity: 0;
+          -webkit-transition: all 600ms ease;
+          -moz-transition: all 600ms ease;
+          -ms-transition: all 600ms ease;
+          -o-transition: all 600ms ease;
+          transition: all 600ms ease;
+          li{
+            line-height: 34px;
+            border: none;
+            a{
+              padding: 0px 10px;
+            }
+            &:hover{
+              a{
+                background: #1e1b1a;
+              }
+            }
+          }
         }
       }
     }
     .status-wrap{
       @include dis(top);
       padding: 4px 0px;
+      text-align: right;
       .welcome-user{
         font-size: 16px;
         font-weight: 700;
@@ -40,11 +75,21 @@
         @include dis(top);
         text-align: center;
         margin-left: 10px;
+        width: 95px;
         span{
           display: block;
+          text-overflow: ellipsis;
+          height: 17px;
+          white-space: nowrap;
+          overflow: hidden;
         }
         b{
           font-size: 20px;
+          text-overflow: ellipsis;
+          height: 20px;
+          white-space: nowrap;
+          overflow: hidden;
+          display: block;
         }
       }
       .money-user, .diamond-user{
@@ -56,6 +101,7 @@
         padding: 5px 28px;
         position: relative;
         background: url(images/icon-dolar.png) no-repeat 5px center #111522;
+        width: 175px;
         button{
           position: absolute;
           right: 0px;
@@ -78,6 +124,7 @@
     }
     .menu{
       @include dis(top);
+      position: relative;
       button{
         border: none;
         background: none;
@@ -160,6 +207,77 @@
       position: absolute;
       top: 0px;
       width: 1000%;
+    }
+  }
+  .navigation{
+    position: absolute;
+    right: 0px;
+    top: 100%;
+    background: #000;
+    width: 150px;
+    z-index: 99;
+    display: none;
+    ul{
+      border: 1px solid #ccc;
+      li{
+        &:first-child{
+          a{
+            border-top: none;
+          }
+        }
+        a{
+          display: block;
+          font-size: 15px;
+          color: #fff;
+          border-top: 1px solid #ccc;
+          padding: 5px 10px;
+        }
+      }
+    }
+  }
+  .language{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 15px 5px;
+    display: block;
+  }
+  .button-control{
+    margin-left: 50px;
+    ul{
+      margin-top: 10px;
+      border: 1px solid #278b3f;
+      li{
+        padding: 0px;
+        &:hover{
+          a{
+            background: #278b3f;
+          }
+        }
+        &:first-child{
+          a{
+            border-left: 0px;
+          }
+        }
+        a{
+          color: #fff;
+          text-transform: uppercase;
+          font-size: 16px;
+          padding: 5px 15px;
+          display: block;
+          border-left: 1px solid #278b3f;
+        }
+      }
+    }
+  }
+  &.logined{
+    .logo {
+      position: absolute;
+      left: 20px;
+      top: 4px;
+    }
+    .header-top{
+      padding-left: 80px;
     }
   }
 }
