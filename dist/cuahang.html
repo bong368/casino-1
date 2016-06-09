@@ -11,7 +11,11 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
     <!-- jQuery-->
     <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+<<<<<<< HEAD:dist/cart.html
     <script type="text/javascript" src="js/jquery-ui.js"></script>
+=======
+    <script type="text/javascript" src="libs/jqueryui/jquery-ui.min.js"></script>
+>>>>>>> c942831be59720bc6ef846a2a9e51855d1e49782:dist/cuahang.html
     <script type="text/javascript" src="libs/owl-carousel/owl.carousel.min.js"></script>
     <script type="text/javascript" src="libs/validate/jquery.validate.min.js"></script>
     <!-- orther script-->
@@ -22,7 +26,7 @@
       <header id="header" class="site-header">
         <div class="container">
           <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
-          <div class="header-top clearfix">
+          <div class="header-top">
             <nav class="main-menu">
               <ul class="list-inline">
                 <li><a href="#">trang chủ</a>
@@ -40,29 +44,14 @@
               </ul>
             </nav>
             <!-- .main-menu-->
-            <div class="menu fright">
-              <button class="btn-menu"><img src="images/icon-menu.png" alt=""></button>
-              <div class="navigation">
-                <ul>
-                  <li><a href="#">item01</a></li>
-                  <li><a href="#">item02</a></li>
-                  <li><a href="#">item03</a></li>
-                  <li><a href="#">item04</a></li>
-                  <li><a href="#">item05</a></li>
-                </ul>
-              </div>
+            <div class="button-control fright">
+              <ul class="list-inline">
+                <li><a href="#">đăng nhập</a></li>
+                <li><a href="#">đăng ký</a></li>
+              </ul>
             </div>
-            <!--end menu-->
-            <div class="status-wrap fright">
-              <div class="welcome-user"><span>welcome...</span><b>username</b></div>
-              <div class="money-user"><span>999,999,999</span>
-                <button><img src="images/icon-plus.png" alt=""></button>
-              </div>
-              <div class="diamond-user"><span>999,999,999</span>
-                <button><img src="images/icon-plus.png" alt=""></button>
-              </div>
-            </div>
-            <!--end status-wrap-->
+            <div class="language fright"><span class="current-language">VN</span></div>
+            <div class="clearfix"></div>
           </div>
           <!--end header-top-->
           <div class="header-bottom">
@@ -99,17 +88,106 @@
           <div class="wrap-content no-background"><a href="#" class="btn-back"><img src="images/btn-back.png" alt=""></a>
             <div class="main-content">
               <ul class="list-inline tabs">
-                <li><a href="#tab1" class="active">NẠP XÈNG</a></li>
-                <li><a href="#tab2">BÁN XÈNG</a></li>
-                <li><a href="#tab3">CỬA HÀNG</a></li>
+                <li><a href="#tab1" class="active">THẺ ĐIỆN THOẠI</a></li>
+                <li><a href="#tab2">THẺ GAME</a></li>
+                <li><a href="#tab3">VẬT PHẨM</a></li>
               </ul>
               <div id="tab1" class="tab-content">
-                <ul class="list-inline list-cart">
-                  <li class="sale"><a href="#"><img src="images/cart-vt.png" alt=""><span>Thẻ Viettel</span></a></li>
-                  <li><a href="#"><img src="images/cart-mb.png" alt=""><span>Thẻ Mobifone</span></a></li>
-                  <li><a href="#"><img src="images/cart-vn.png" alt=""><span>Thẻ Vinaphone</span></a></li>
-                  <li><a href="#"><img src="images/cart-empty.png" alt=""><span> </span></a></li>
-                </ul>
+                <form class="frm-cart">
+                  <div class="frm-left fleft">
+                    <p>
+                      <label for="" class="slt">
+                        <select name="">
+                          <option value="" selected disable>Chọn loại thẻ</option>
+                          <option value="">Option01</option>
+                          <option value="">Option02</option>
+                          <option value="">Option03</option>
+                          <option value="">Option04</option>
+                          <option value="">Option05</option>
+                        </select>
+                      </label>
+                    </p>
+                    <p>
+                      <label for="" class="slt">
+                        <select name="">
+                          <option value="" selected disable>Chọn mệnh giá</option>
+                          <option value="">Option01</option>
+                          <option value="">Option02</option>
+                          <option value="">Option03</option>
+                          <option value="">Option04</option>
+                          <option value="">Option05</option>
+                        </select>
+                      </label>
+                    </p>
+                    <p>
+                      <label for="" class="slt"><span class="note">* Mua tối đa được 5 thẻ</span>
+                        <select name="">
+                          <option value="" selected disable>Số lượng</option>
+                          <option value="">Option01</option>
+                          <option value="">Option02</option>
+                          <option value="">Option03</option>
+                          <option value="">Option04</option>
+                          <option value="">Option05</option>
+                        </select>
+                      </label>
+                    </p>
+                    <p>
+                      <input type="text" name="" placeholder="Nhập mã" class="capcha">
+                      <div class="capcha"><img src="images/capcha.png" alt=""></div>
+                    </p>
+                    <div class="align-center">
+                      <input type="submit" value="999,999,999,999">
+                      <label>* Số dư không đủ để thực hiện giao dịch</label>
+                    </div>
+                  </div>
+                  <!--end frm-left-->
+                  <div class="frm-right fright">
+                    <table class="tbl-cart">
+                      <tr>
+                        <th>Mệnh giá</th>
+                        <th>Giá bán</th>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--end frm-right-->
+                  <div class="clearfix"></div>
+                </form>
               </div>
               <div id="tab2" class="tab-content">
                 <p>This is the 2nd tab.</p>

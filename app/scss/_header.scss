@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #header{
   background: #2c2943;
   .container{
@@ -292,3 +293,181 @@
     from {left: 100%;}
     to {left: -100%;}
 }
+=======
+#header{
+  background: #2c2943;
+  .container{
+    position: relative;
+  }
+  .logo{
+    position: absolute;
+    left: 0px;
+    top: 10px;
+  }
+  .header-top{
+    font-size: 0px;
+    border-bottom: 2px solid #fdbd20;
+    padding-left: 150px;
+    .main-menu{
+      @include dis(top);
+      li{
+        a{
+          color: #fff;
+          text-transform: uppercase;;
+          font-size: 16px;
+          padding: 15px 5px;
+          display: block;
+        }
+        &:hover{
+          a{
+            color: #999;
+          }
+        }
+      }
+    }
+    .status-wrap{
+      @include dis(top);
+      padding: 4px 0px;
+      .welcome-user{
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        line-height: 17px;
+        @include dis(top);
+        text-align: center;
+        margin-left: 10px;
+        span{
+          display: block;
+        }
+        b{
+          font-size: 20px;
+        }
+      }
+      .money-user, .diamond-user{
+        @include dis(top);
+        margin: 0px 5px;
+        font-size: 22px;
+        font-weight: 700;
+        color: #fcb41d;
+        padding: 5px 28px;
+        position: relative;
+        background: url(images/icon-dolar.png) no-repeat 5px center #111522;
+        button{
+          position: absolute;
+          right: 0px;
+          top: 0px;
+          padding: 0px;
+          margin: 0px;
+          font-size: 0px;
+          cursor: pointer;
+        }
+      }
+      .diamond-user{
+        @include dis(top);
+        color: #ff00f0;
+        background: url(images/icon-diamond.png) no-repeat 5px center #111522;
+      }
+      button{
+        border: none;
+        background: none;
+      }
+    }
+    .menu{
+      @include dis(top);
+      button{
+        border: none;
+        background: none;
+        font-size: 0px;
+        padding: 13px 10px;
+        margin: 0px;
+      }
+    }
+  }
+  .header-bottom{
+    padding: 4px 0px 4px 150px;;
+    background: url(images/bgr-header-bottom.png) center top #000;
+    .status-result{
+      border: 1px solid #fdbd20;
+      background: #000;
+      padding: 5px;
+      @include dis(top);
+      margin-right: 15px;
+      ul{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        li{
+          span{
+            text-transform: uppercase;
+            @include dis(middle);
+            width: 60px;
+            font-size: 15px;
+          }
+          b{
+            font-weight: 400;
+            color: #fcb41d;
+            font-size: 15px;
+            @include dis(middle);
+            padding-right: 25px;
+            background: url(images/icon-dolar.png) no-repeat right center #111522;
+          }
+        }
+      }
+    }
+    .ads-banner{
+      @include dis(top);
+    }
+    .menu-control{
+      float: right;
+      margin-top: 5px;
+      ul{
+        li{
+          text-align: center;
+          a{
+            display: block;
+            padding: 0px 20px;
+          }
+          span{
+            display: block;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 15px;
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .auto-scroll{
+    background: #fdbd20;
+    padding: 3px 0px;
+    color: #000;
+    font-size: 15px;
+    position: relative;
+    line-height: 27px;
+    height: 27px;
+    overflow: hidden;
+    p{
+      opacity: 0.5;
+      -webkit-animation: mymove 30s infinite; /* Chrome, Safari, Opera */
+      animation: mymove 30s infinite;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      position: absolute;
+      top: 0px;
+      width: 1000%;
+    }
+  }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    from {left: 100%;}
+    to {left: -100%;}
+}
+
+@keyframes mymove {
+    from {left: 100%;}
+    to {left: -100%;}
+}
+>>>>>>> c942831be59720bc6ef846a2a9e51855d1e49782

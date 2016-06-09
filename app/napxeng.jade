@@ -1,0 +1,47 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    #wrapper
+      include ./includes/header.jade
+      main#main.site-main
+        .container
+          .wrap-content.no-background
+            a.btn-back(href="#")
+              img(src="images/btn-back.png", alt="")
+            .main-content
+              ul.list-inline.tabs
+                li
+                  a.active(href='#tab1') NẠP XÈNG
+                li
+                  a(href='#tab2') BÁN XÈNG
+                li
+                  a(href='#tab3') CỬA HÀNG
+              #tab1.tab-content
+                ul.list-inline.list-cart
+                  li.sale
+                    a(href="napthe.html")
+                      img(src="images/cart-vt.png", alt="")
+                      span Thẻ Viettel
+                  li
+                    a(href="napthe.html")
+                      img(src="images/cart-mb.png", alt="")
+                      span Thẻ Mobifone
+                  li
+                    a(href="napthe.html")
+                      img(src="images/cart-vn.png", alt="")
+                      span Thẻ Vinaphone
+                  li
+                    a(href="napthe.html")
+                      img(src="images/cart-empty.png", alt="")
+                      span 
+              #tab2.tab-content
+                p This is the 2nd tab.
+              #tab3.tab-content
+                p And this is the 3rd tab.
+
+            //end main-content
+          //end wrap-content
+      // .site-main
+      include ./includes/footer.jade
+    // #wrapper

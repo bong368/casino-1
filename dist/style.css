@@ -1232,6 +1232,7 @@ textarea:focus {
     line-height: 20px;
     text-align: center; }
 
+<<<<<<< HEAD
 .owl-carousel-home {
   padding: 0px 70px;
   margin: 30px 0px;
@@ -1255,6 +1256,10 @@ textarea:focus {
 
 /*==========================================================
 	6. FOOTER
+=======
+/*==========================================================
+	6. FOOTER
+>>>>>>> c942831be59720bc6ef846a2a9e51855d1e49782
 ==========================================================*/
 #footer {
   padding: 15px 0px;
