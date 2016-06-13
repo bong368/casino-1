@@ -1,0 +1,120 @@
+doctype html
+html
+  include ./includes/head.jade
+  body
+    #wrapper
+      include ./includes/header-xocdia.jade
+      main#main.site-main
+        .container
+          .game-container
+            .user-control
+              .user-game
+                ul
+                  li
+                    a(href="#") 1
+                  li
+                    a(href="#") 2
+                a.change-boss xin cái
+                ul
+                  li
+                    a(href="#") 3
+                  li
+                    a(href="#") 4
+              //end user-game
+            .user-left
+              ul
+                li
+                  a(href="#") 1
+                li
+                  a(href="#") 2
+                li
+                  a(href="#") 3
+                li
+                  a(href="#") 4
+                li
+                  a(href="#") 5
+            //end user-left
+            .main-game
+              .main-game-top
+                .label-odd
+                  a(href="#") chẵn
+                .label-time
+                  span 15s
+                .label-even
+                  a(href="#") lẻ
+              //end main-game-top
+              .main-game-center
+                .option-choose
+                  span 4 đỏ
+                .option-choose
+                  span 4 đen 
+                .option-choose
+                  span 3 đổ 1 đen
+                .option-choose
+                  span 3 đen 1 đổ 
+              .main-game-bottom
+                .game-status
+                  .status-odd
+                    h6 chẵn
+                    ul
+                      li
+                      li
+                      li
+                      li
+                      li
+                      li
+                      li
+                      li
+                  .status-even
+                    h6 lẻ
+                    ul
+                      li
+                      li
+                      li
+                      li
+                      li
+                      li
+                      li
+                      li
+                //end game-status
+                .game-show-info
+                  table
+                    tr
+                      th 99
+                      td 4
+                      td 3
+                      td 4
+                    tr
+                      th 99
+                      td 4
+                      td 3
+                      td 4
+                    tr
+                      th 99
+                      td 
+                      td 1
+                      td 2
+                    tr
+                      th 99
+                      td 
+                      td 3
+                      td 
+                //end game-status
+            //end main-game-center
+            .user-right
+              ul
+                li
+                  a(href="#") 1
+                li
+                  a(href="#") 2
+                li
+                  a(href="#") 3
+                li
+                  a(href="#") 4
+                li
+                  a(href="#") 5
+            //end user-right
+      // .site-main
+
+      include ./includes/footer.jade
+    // #wrapper

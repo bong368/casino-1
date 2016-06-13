@@ -200,7 +200,8 @@ textarea:focus {
           border: 1px solid #d4d5d9;
           display: block;
           opacity: 1;
-          top: 100%; }
+          top: 100%;
+          background: #2c2944; }
         #header .header-top .main-menu li ul {
           position: absolute;
           left: 0px;
@@ -269,7 +270,8 @@ textarea:focus {
         padding: 5px 28px;
         position: relative;
         background: url(images/icon-dolar.png) no-repeat 5px center #111522;
-        width: 175px; }
+        width: 175px;
+        text-align: center; }
         #header .header-top .status-wrap .money-user button, #header .header-top .status-wrap .diamond-user button {
           position: absolute;
           right: 0px;
@@ -425,7 +427,9 @@ textarea:focus {
     left: 20px;
     top: 4px; }
   #header.logined .header-top {
-    padding-left: 80px; }
+    padding-left: 0px; }
+  #header.logined .welcome-user {
+    margin-right: 55px; }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes mymove {
@@ -1148,6 +1152,71 @@ textarea:focus {
       height: 66px;
       background: url(images/btn-next.png) no-repeat left top;
       margin-left: 10px; }
+  #main .status-jackpot {
+    border: 1px solid #fdbd20;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 5px;
+    font-size: 18px;
+    line-height: 39px; }
+    #main .status-jackpot .name-jackpot {
+      background: #fdbd20;
+      color: #000;
+      font-weight: 400;
+      padding: 0px 20px; }
+    #main .status-jackpot .money-jackpot {
+      background-color: #000000;
+      background-image: url(images/bgr-icon-jackpot.png);
+      background-repeat: no-repeat;
+      background-position: right 7px center;
+      color: #fcb41d;
+      padding: 0px 35px 0px 10px; }
+  #main .price-room {
+    font-size: 18px;
+    color: #fcb41d;
+    text-align: center;
+    position: relative; }
+    #main .price-room span.min {
+      position: absolute;
+      left: 0px; }
+    #main .price-room span.max {
+      position: absolute;
+      right: 0px; }
+  #main .label-jackpot {
+    margin-top: 5px;
+    border: 1px solid #fdbd20;
+    font-size: 18px;
+    text-align: center;
+    line-height: 31px; }
+    #main .label-jackpot h6 {
+      background: #fdbd20;
+      color: #000;
+      font-weight: 400;
+      padding: 0px 20px;
+      text-transform: uppercase;
+      font-size: 18px;
+      line-height: 31px; }
+    #main .label-jackpot span {
+      background-color: #000000;
+      background-image: url(images/bgr-icon-jackpot.png);
+      background-repeat: no-repeat;
+      background-position: right 15px center;
+      color: #fcb41d;
+      padding: 0px 35px 0px 10px;
+      display: block;
+      font-size: 18px;
+      line-height: 31px; }
+  #main .price-icongame {
+    border: 1px solid #fdbd20;
+    font-size: 18px;
+    text-align: center;
+    line-height: 31px;
+    background-color: #000000;
+    background-image: url(images/bgr-icon-jackpot.png);
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    color: #fcb41d;
+    padding: 0px 35px 20px 10px; }
 
 #overlay {
   position: fixed;
@@ -1232,12 +1301,11 @@ textarea:focus {
     line-height: 20px;
     text-align: center; }
 
-<<<<<<< HEAD
-.owl-carousel-home {
+.owl-carousel-home, .owl-carousel-icongame {
   padding: 0px 70px;
   margin: 30px 0px;
   position: relative; }
-  .owl-carousel-home .owl-prev {
+  .owl-carousel-home .owl-prev, .owl-carousel-icongame .owl-prev {
     position: absolute;
     left: 0px;
     top: 0px;
@@ -1245,7 +1313,7 @@ textarea:focus {
     width: 50px;
     background: url(images/bt-left.png) no-repeat center center;
     text-indent: -9999px; }
-  .owl-carousel-home .owl-next {
+  .owl-carousel-home .owl-next, .owl-carousel-icongame .owl-next {
     position: absolute;
     right: 0px;
     top: 0px;
@@ -1256,10 +1324,6 @@ textarea:focus {
 
 /*==========================================================
 	6. FOOTER
-=======
-/*==========================================================
-	6. FOOTER
->>>>>>> c942831be59720bc6ef846a2a9e51855d1e49782
 ==========================================================*/
 #footer {
   padding: 15px 0px;
