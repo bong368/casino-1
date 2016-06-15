@@ -76,112 +76,129 @@
           <div class="game-container">
             <div class="user-control">
               <div class="user-game">
-                <ul>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
+                <ul class="list-inline">
+                  <li class="team team-black medal-silver"><a href="#"> </a></li>
+                  <li class="team team-red medal-gold"><a href="#"> </a></li>
                 </ul><a class="change-boss">xin cái</a>
-                <ul>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
+                <ul class="list-inline">
+                  <li><a href="#"> </a></li>
+                  <li class="team team-black"><a href="#"> </a></li>
                 </ul>
               </div>
               <!--end user-game-->
             </div>
-            <div class="user-left">
-              <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-              </ul>
-            </div>
-            <!--end user-left-->
-            <div class="main-game">
-              <div class="main-game-top">
-                <div class="label-odd"><a href="#">chẵn</a></div>
-                <div class="label-time"><span>15s</span></div>
-                <div class="label-even"><a href="#">lẻ</a></div>
+            <!--end user-control-->
+            <div class="user-game clearfix">
+              <div class="user-list user-left fleft">
+                <ul>
+                  <li><a href="#"> </a></li>
+                  <li><a href="#"> </a></li>
+                  <li class="team team-red"><a href="#"> </a></li>
+                  <li><a href="#"> </a></li>
+                  <li><a href="#"> </a></li>
+                </ul>
               </div>
-              <!--end main-game-top-->
-              <div class="main-game-center">
-                <div class="option-choose"><span>4 đỏ</span></div>
-                <div class="option-choose"><span>4 đen </span></div>
-                <div class="option-choose"><span>3 đổ 1 đen</span></div>
-                <div class="option-choose"><span>3 đen 1 đổ </span></div>
-              </div>
-              <div class="main-game-bottom">
-                <div class="game-status">
-                  <div class="status-odd">
-                    <h6>chẵn</h6>
-                    <ul>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
-                  <div class="status-even">
-                    <h6>lẻ</h6>
-                    <ul>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                      <li></li>
-                    </ul>
-                  </div>
+              <!--end user-left-->
+              <div class="main-game fleft">
+                <div class="main-game-top clearfix">
+                  <div class="label-button label-odd fleft"><a href="#">chẵn</a></div>
+                  <div class="label-time"><span>15s</span></div>
+                  <div class="label-button label-even fright"><a href="#">lẻ</a></div>
                 </div>
-                <!--end game-status-->
-                <div class="game-show-info">
-                  <table>
-                    <tr>
-                      <th>99</th>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>4</td>
-                    </tr>
-                    <tr>
-                      <th>99</th>
-                      <td>4</td>
-                      <td>3</td>
-                      <td>4</td>
-                    </tr>
-                    <tr>
-                      <th>99</th>
-                      <td> </td>
-                      <td>1</td>
-                      <td>2</td>
-                    </tr>
-                    <tr>
-                      <th>99</th>
-                      <td> </td>
-                      <td>3</td>
-                      <td> </td>
-                    </tr>
-                  </table>
+                <!--end main-game-top-->
+                <div class="main-game-center">
+                  <div class="option-choose option-one"><span>4 đỏ</span></div>
+                  <div class="option-choose option-two"><span>4 đen </span></div>
+                  <div class="option-choose option-three"><span>3 đổ 1 đen</span></div>
+                  <div class="option-choose option-four"><span>3 đen 1 đổ </span></div>
                 </div>
-                <!--end game-status-->
+                <div class="main-game-bottom clearfix">
+                  <div class="game-status fleft">
+                    <div class="status-odd">
+                      <h6>chẵn</h6>
+                      <ul>
+                        <li class="dot dot-red"></li>
+                        <li class="dot dot-red"></li>
+                        <li class="dot dot-red"></li>
+                        <li class="dot dot-red"></li>
+                        <li class="dot dot-black"></li>
+                        <li class="dot dot-black"></li>
+                        <li class="dot dot-black"></li>
+                        <li class="dot dot-black"></li>
+                      </ul>
+                    </div>
+                    <div class="status-even">
+                      <h6>lẻ</h6>
+                      <ul>
+                        <li class="dot dot-red"></li>
+                        <li class="dot dot-red"></li>
+                        <li class="dot dot-red"></li>
+                        <li class="dot dot-black"></li>
+                        <li class="dot dot-black"></li>
+                        <li class="dot dot-black"></li>
+                        <li class="dot dot-black"></li>
+                        <li class="dot dot-red"></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!--end game-status-->
+                  <div class="game-show-info fleft">
+                    <table>
+                      <tr>
+                        <th>99</th>
+                        <td><span class="dot-red">4</span></td>
+                        <td><span class="dot-black">3</span></td>
+                        <td><span class="dot-red">4</span></td>
+                      </tr>
+                      <tr>
+                        <th>99</th>
+                        <td><span class="dot-red">4</span></td>
+                        <td><span class="dot-black">3</span></td>
+                        <td><span class="dot-red">4</span></td>
+                      </tr>
+                      <tr>
+                        <th>99</th>
+                        <td></td>
+                        <td><span class="dot-black">1</span></td>
+                        <td><span class="dot-red">2</span></td>
+                      </tr>
+                      <tr>
+                        <th>99</th>
+                        <td></td>
+                        <td><span>3</span></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th>99</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <th>99</th>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </table>
+                  </div>
+                  <!--end game-status-->
+                </div>
               </div>
+              <!--end main-game-center-->
+              <div class="user-list user-right fright">
+                <ul>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                  <li><a href="#"></a></li>
+                </ul>
+              </div>
+              <!--end user-right-->
+              <div class="clearfix"></div>
             </div>
-            <!--end main-game-center-->
-            <div class="user-right">
-              <ul>
-                <li><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">4</a></li>
-                <li><a href="#">5</a></li>
-              </ul>
-            </div>
-            <!--end user-right-->
+            <!--end user-game-->
           </div>
         </div>
       </main>

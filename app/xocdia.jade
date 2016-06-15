@@ -9,111 +9,134 @@ html
           .game-container
             .user-control
               .user-game
-                ul
-                  li
-                    a(href="#") 1
-                  li
-                    a(href="#") 2
+                ul.list-inline
+                  li.team.team-black.medal-silver
+                    a(href="#") 
+                  li.team.team-red.medal-gold
+                    a(href="#") 
                 a.change-boss xin cái
+                ul.list-inline
+                  li
+                    a(href="#") 
+                  li.team.team-black
+                    a(href="#") 
+              //end user-game
+            //end user-control
+            .user-game.clearfix
+              .user-list.user-left.fleft
                 ul
                   li
-                    a(href="#") 3
+                    a(href="#") 
                   li
-                    a(href="#") 4
-              //end user-game
-            .user-left
-              ul
-                li
-                  a(href="#") 1
-                li
-                  a(href="#") 2
-                li
-                  a(href="#") 3
-                li
-                  a(href="#") 4
-                li
-                  a(href="#") 5
-            //end user-left
-            .main-game
-              .main-game-top
-                .label-odd
-                  a(href="#") chẵn
-                .label-time
-                  span 15s
-                .label-even
-                  a(href="#") lẻ
-              //end main-game-top
-              .main-game-center
-                .option-choose
-                  span 4 đỏ
-                .option-choose
-                  span 4 đen 
-                .option-choose
-                  span 3 đổ 1 đen
-                .option-choose
-                  span 3 đen 1 đổ 
-              .main-game-bottom
-                .game-status
-                  .status-odd
-                    h6 chẵn
-                    ul
-                      li
-                      li
-                      li
-                      li
-                      li
-                      li
-                      li
-                      li
-                  .status-even
-                    h6 lẻ
-                    ul
-                      li
-                      li
-                      li
-                      li
-                      li
-                      li
-                      li
-                      li
-                //end game-status
-                .game-show-info
-                  table
-                    tr
-                      th 99
-                      td 4
-                      td 3
-                      td 4
-                    tr
-                      th 99
-                      td 4
-                      td 3
-                      td 4
-                    tr
-                      th 99
-                      td 
-                      td 1
-                      td 2
-                    tr
-                      th 99
-                      td 
-                      td 3
-                      td 
-                //end game-status
-            //end main-game-center
-            .user-right
-              ul
-                li
-                  a(href="#") 1
-                li
-                  a(href="#") 2
-                li
-                  a(href="#") 3
-                li
-                  a(href="#") 4
-                li
-                  a(href="#") 5
-            //end user-right
+                    a(href="#") 
+                  li.team.team-red
+                    a(href="#") 
+                  li
+                    a(href="#") 
+                  li
+                    a(href="#") 
+              //end user-left
+              .main-game.fleft
+                .main-game-top.clearfix
+                  .label-button.label-odd.fleft
+                    a(href="#") chẵn
+                  .label-time
+                    span 15s
+                  .label-button.label-even.fright
+                    a(href="#") lẻ
+                //end main-game-top
+                .main-game-center
+                  .option-choose.option-one
+                    span 4 đỏ
+                  .option-choose.option-two
+                    span 4 đen 
+                  .option-choose.option-three
+                    span 3 đổ 1 đen
+                  .option-choose.option-four
+                    span 3 đen 1 đổ 
+                .main-game-bottom.clearfix
+                  .game-status.fleft
+                    .status-odd
+                      h6 chẵn
+                      ul
+                        li.dot.dot-red
+                        li.dot.dot-red
+                        li.dot.dot-red
+                        li.dot.dot-red
+                        li.dot.dot-black
+                        li.dot.dot-black
+                        li.dot.dot-black
+                        li.dot.dot-black
+                    .status-even
+                      h6 lẻ
+                      ul
+                        li.dot.dot-red
+                        li.dot.dot-red
+                        li.dot.dot-red
+                        li.dot.dot-black
+                        li.dot.dot-black
+                        li.dot.dot-black
+                        li.dot.dot-black
+                        li.dot.dot-red
+                  //end game-status
+                  .game-show-info.fleft
+                    table
+                      tr
+                        th 99
+                        td
+                          span.dot-red 4
+                        td
+                          span.dot-black 3
+                        td
+                          span.dot-red 4
+                      tr
+                        th 99
+                        td
+                          span.dot-red 4
+                        td
+                          span.dot-black 3
+                        td
+                          span.dot-red 4
+                      tr
+                        th 99
+                        td
+                        td
+                          span.dot-black 1
+                        td
+                          span.dot-red 2
+                      tr
+                        th 99
+                        td
+                        td
+                          span 3
+                        td
+                      tr
+                        th 99
+                        td
+                        td
+                        td
+                      tr
+                        th 99
+                        td
+                        td
+                        td
+                  //end game-status
+              //end main-game-center
+              .user-list.user-right.fright
+                ul
+                  li
+                    a(href="#")
+                  li
+                    a(href="#")
+                  li
+                    a(href="#")
+                  li
+                    a(href="#")
+                  li
+                    a(href="#")
+              //end user-right
+              .clearfix
+            //end user-game
       // .site-main
 
       include ./includes/footer.jade
