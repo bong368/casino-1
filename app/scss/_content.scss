@@ -931,7 +931,7 @@
     background: #2c2943;
     border-radius: 5px;
     padding: 10px;
-  } 
+  }
 }
 
 .float-button{
@@ -994,6 +994,7 @@
 }
 
 .game-container{
+  padding-bottom: 35px;
   .user-control{
     .user-game{
       text-align: center;
@@ -1105,6 +1106,7 @@
       zoom: 1;
       border: 2px solid #fcb41d;
       border-radius: 7px;
+      position: relative;
       .main-game-top{
         text-align: center;
         .label-button{
@@ -1201,7 +1203,7 @@
             }
             &.dot-black{
               background: #1f1f1f;
-            } 
+            }
           }
         }
         h6{
@@ -1258,10 +1260,86 @@
               }
               &.dot-black{
                 background: #1f1f1f;
-              } 
+              }
             }
           }
         }
+      }
+    }
+  }
+  .control-game-bottom{
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    margin-top: 10px;
+    .place-a-let{
+      .btn{
+        display: block;
+        text-transform: uppercase;
+        font-size: 18px;
+        color: #aaa1ef;
+        background: #3e3a5b;
+        border-radius: 5px;
+        line-height: 33px;
+        margin-bottom: 5px;
+        font-weight: 700;
+      }
+    }
+    .option-money{
+      margin-left: 10px;
+      border-left: 2px solid #fcb41d;
+      border-right: 2px solid #fcb41d;
+      border-bottom: 2px solid #fcb41d;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      padding: 10px;
+      margin-top: -10px;
+      ul{
+        li{
+          padding: 10px 5px;
+          &.active{
+            background: #3e3a5b;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+    .set-double{
+      @include dis(top);
+      margin: 0px 5px;
+      font-size: 22px;
+      font-weight: 700;
+      color: #fcb41d;
+      padding: 5px 28px;
+      position: relative;
+      background: url(images/icon-dolar.png) no-repeat 5px center #111522;
+      width: 120px;
+      text-align: center;
+      border: 1px solid #7b75a8;
+      position: relative;
+      button{
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        padding: 0px;
+        margin: 0px;
+        font-size: 0px;
+        cursor: pointer;
+        background: none;
+        border: none;
+      }
+      .btn-double{
+        position: absolute;
+        left: 0px;
+        top: 100%;
+        font-size: 27px;
+        font-weight: 700;
+        color: #fff;
+        background: #fcb41d;
+        margin-top: 5px;
+        text-transform: uppercase;
+        right: 0px;
+        padding: 0px;
       }
     }
   }
