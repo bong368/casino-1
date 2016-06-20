@@ -876,7 +876,7 @@
     background-repeat: no-repeat;
     background-position: right 15px center;
     color: #fcb41d;
-    padding: 0px 35px 20px 10px;
+    padding: 0px 35px 0px 10px;
   }
 }
 
@@ -995,6 +995,93 @@
 
 .game-container{
   padding-bottom: 35px;
+  position: relative;
+  .back-page{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    span{
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+    }
+  }
+  .jackpot-current{
+    margin-top: 5px;
+    border: 1px solid #fdbd20;
+    font-size: 18px;
+    text-align: center;
+    line-height: 31px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    h6{
+      background: #fdbd20;
+      color: #000;
+      font-weight: 400;
+      padding: 0px 20px;
+      font-size: 14px;
+      line-height: 20px;
+    }
+    span{
+      background-color: #000000;
+      background-image: url(images/bgr-icon-jackpot.png);
+      background-repeat: no-repeat;
+      background-position: left 20px center;
+      color: #fcb41d;
+      padding: 0px 20px 0px 45px;
+      display: block;
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .bxh-container{
+    a.btn-bxh{
+      display: block;
+      text-transform: uppercase;
+      font-size: 20px;
+      color: #aaa1ef;
+      background: #3e3a5b;
+      border-radius: 5px;
+      line-height: 20px;
+      margin-bottom: 5px;
+      font-weight: 700;
+      padding: 7px 20px;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+  .network-container{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    a.btn{
+      display: block;
+      font-size: 20px;
+      color: #aaa1ef;
+      background: #3e3a5b;
+      border-radius: 5px;
+      line-height: 20px;
+      margin-bottom: 5px;
+      font-weight: 700;
+      padding: 7px 20px;
+      position: relative;
+      img{
+        height: 25px;
+      }
+      span{
+        position: absolute;
+        bottom: 100%;
+        left: 0px;
+        right: 0px;
+        text-align: center;
+        color: #fff;
+        text-transform: capitalize;
+        font-size: 15px;
+      }
+    }
+  }
   .user-control{
     .user-game{
       text-align: center;
@@ -1077,6 +1164,7 @@
   }
   .user-game{
     .user-list{
+      position: relative;
       ul{
         @include rsul;
         li{
@@ -1280,23 +1368,26 @@
         color: #aaa1ef;
         background: #3e3a5b;
         border-radius: 5px;
-        line-height: 33px;
+        line-height: 20px;
         margin-bottom: 5px;
         font-weight: 700;
+        padding-left: 5px;
+        padding-right: 5px;
       }
     }
     .option-money{
-      margin-left: 10px;
+      margin-left: 5px;
       border-left: 2px solid #fcb41d;
       border-right: 2px solid #fcb41d;
       border-bottom: 2px solid #fcb41d;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
-      padding: 10px;
+      padding: 5px 10px;
       margin-top: -10px;
+      font-size: 0px;
       ul{
         li{
-          padding: 10px 5px;
+          padding: 10px 3px;
           &.active{
             background: #3e3a5b;
             border-radius: 10px;
@@ -1310,7 +1401,7 @@
       font-size: 22px;
       font-weight: 700;
       color: #fcb41d;
-      padding: 5px 28px;
+      padding: 1px 28px;
       position: relative;
       background: url(images/icon-dolar.png) no-repeat 5px center #111522;
       width: 120px;
@@ -1332,7 +1423,7 @@
         position: absolute;
         left: 0px;
         top: 100%;
-        font-size: 27px;
+        font-size: 23px;
         font-weight: 700;
         color: #fff;
         background: #fcb41d;
@@ -1340,6 +1431,27 @@
         text-transform: uppercase;
         right: 0px;
         padding: 0px;
+      }
+    }
+    .more-odd-even{
+      a{
+        display: block;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        line-height: 20px;
+        margin-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 21px;
+        color: #fff;
+        text-transform: capitalize;
+        font-weight: 700;
+        &.btn-odd{
+          background: #a21b0b;
+        }
+        &.btn-even{
+          background: #1f1f1f;
+        }
       }
     }
   }

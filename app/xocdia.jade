@@ -7,6 +7,8 @@ html
       main#main.site-main
         .container
           .game-container
+            .back-page
+              span Vỉa hè 123456
             .user-control
               .user-game
                 ul.list-inline
@@ -22,6 +24,10 @@ html
                     a(href="#") 
               //end user-game
             //end user-control
+            .jackpot-current
+              h6 Jackpot
+              span 500,000
+            //end jackpot
             .user-game.clearfix
               .user-list.user-left.fleft
                 ul
@@ -35,6 +41,10 @@ html
                     a(href="#") 
                   li
                     a(href="#") 
+                .bxh-container
+                  a.btn-bxh bxh
+                  .bxh-content
+                //end bxh
               //end user-left
               .main-game.fleft
                 .main-game-top.clearfix
@@ -148,6 +158,7 @@ html
                   .more-odd-even.fleft
                     a.btn.btn-odd chẵn ngoài
                     a.btn.btn-even lẻ ngoài
+                  .clearfix
                 //end control-game-bottom
               //end main-game-center
               .user-list.user-right.fright
@@ -162,6 +173,16 @@ html
                     a(href="#")
                   li
                     a(href="#")
+                .network-container
+                  a.btn.btn-people
+                    img(src="images/icon-people.png", alt="")
+                    span
+                      b 50
+                      |  người
+                  a.btn.btn-network Chat
+                  .chat-content
+                  .network-content
+                //end bxh
               //end user-right
               .clearfix
             //end user-game
